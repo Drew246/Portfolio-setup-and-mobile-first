@@ -4,13 +4,11 @@
 
 body {
   display: flex;
-  font-family: poppins;
+  font-family: poppins, sans-serif;
   flex-direction: column;
   margin: 0 auto;
   width: 375px;
-  margin: auto;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
