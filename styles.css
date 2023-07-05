@@ -96,3 +96,6 @@ nav {
   height: 20px;
   justify-content: space-between;
 }
+.icon {
+  background-color: white;
+}
