@@ -9,6 +9,7 @@ body {
   margin: 0 auto;
   width: 375px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -27,10 +28,12 @@ nav {
   margin-top: auto;
   margin-bottom: auto;
 }
+
 #burgerMenu {
   height: 24px;
   width: 24px;
 }
+
 #logoContainer {
   display: inline-flex;
   width: 100px;
@@ -49,7 +52,6 @@ nav {
 }
 
 #headline {
-  box-sizing: border-box;
   display: inline;
   flex-direction: column;
   background-color: white;
@@ -62,6 +64,7 @@ nav {
   padding-top: 104px;
   top: 92px;
 }
+
 #greeting {
   color: rgba(23, 43, 77, 1);
   display: inline;
@@ -72,6 +75,7 @@ nav {
   line-height: 52px;
   text-align: left;
 }
+
 #intro {
   color: rgba(52, 69, 99, 1);
   height: 146px;
@@ -88,12 +92,14 @@ nav {
   margin-top: 12px;
   gap: 8px;
 }
+
 .social {
   display: flex;
   width: 170.17px;
   height: 20px;
   justify-content: space-between;
 }
+
 .icon {
   background-color: white;
 }
