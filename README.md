@@ -9,8 +9,7 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
+  - [💻 Getting Started](#getting-started)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -23,24 +22,21 @@
 # 📖 [Portfolio setup and mobile-first] <a name="about-project"></a>
 
 
-This is the secong miniproject from module 1. This project serves to familiarize students with flexbox. We are required to replicate a website from a figma template
-by following the suggested list of best practices for HTML & CSS. We are also to make sure that the website is responsive and include button funtionality.
+This is the second mini-project from module 1. This project serves to familiarize students with Flexbox. We are required to replicate a website from a Figma template
+by following the suggested list of best practices for HTML & CSS. We are also to make sure that the website is responsive and includes button functionality.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-
   
   <ul>
     <li><a href="https://html.spec.whatwg.org/">HTML</a></li>
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
   </ul>
 
-
 ### Key Features <a name="key-features"></a>
 
-- **Displays the text "Hello Microverse in my favourite color**
+- *Introductory page with functional social media links*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +87,7 @@ You can deploy this project using:
 👤 Andrew Mccollin
 
 - GitHub: [@githubhandle](https://github.com/Drew246)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/andrew-mccollin)
+- LinkedIn [LinkedIn](https://linkedin.com/in/andrew-mccollin)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
