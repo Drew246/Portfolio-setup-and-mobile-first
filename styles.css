@@ -1,9 +1,8 @@
-* {border: 
+* {
   box-sizing: border-box;
 }
 
 body {
-  
   display: flex;
   font-family: poppins, sans-serif;
   flex-direction: column;
