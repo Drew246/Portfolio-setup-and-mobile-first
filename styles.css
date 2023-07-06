@@ -1,8 +1,9 @@
-* {
+* {border: 
   box-sizing: border-box;
 }
 
 body {
+  
   display: flex;
   font-family: poppins, sans-serif;
   flex-direction: column;
@@ -57,6 +58,7 @@ nav {
   flex-direction: column;
   background-color: white;
   background-image: url(header-shapes-mobile.png);
+  background-repeat: no-repeat;
   width: 375px;
   height: 604px;
   padding: 114px 24px 114px 24px;
@@ -103,4 +105,9 @@ nav {
 
 .icon {
   background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: -2.5rem;
 }
