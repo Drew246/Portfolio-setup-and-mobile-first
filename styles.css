@@ -75,7 +75,6 @@ nav {
 
 .intro {
   color: rgba(52, 69, 99, 1);
-  height: 146px;
   width: 327px;
   line-height: 24px;
   font-weight: 400;
@@ -109,16 +108,15 @@ nav {
   display: grid;
   grid-template-columns: auto;
 }
+
 .card {
   display: inline-flex;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
-  border-radius: 16;
   height: 552px;
   width: 327px;
   flex-direction: column;
-  display: flex;
   gap: 12px;
 }
 
@@ -157,10 +155,6 @@ nav {
   margin-top: 12px;
 }
 
-.canopy li:first-child {
-  list-style: none;
-}
-
 .languages {
   display: flex;
   align-items: flex-start;
@@ -178,7 +172,6 @@ nav {
   font-weight: 500;
   text-align: left;
   color: rgba(96, 112, 255, 1);
-  font-family: Poppins;
   border-radius: 8px;
   height: 24;
   width: auto;
@@ -189,6 +182,10 @@ nav {
   padding-left: 12;
   padding-bottom: 4;
   padding-top: 4;
+}
+
+.canopy li:first-child {
+  list-style: none;
 }
 
 .projectBTN button {
@@ -217,6 +214,7 @@ nav {
   width: 327px;
   height: 35px;
 }
+
 #about {
   height: 1062px;
   width: 375px;
@@ -230,6 +228,7 @@ nav {
   padding-top: 114px;
   box-sizing: border-box;
 }
+
 h3 {
   height: 24;
   display: inline;
@@ -240,6 +239,7 @@ h3 {
   font-size: 20;
   width: 237;
 }
+
 #langMenu {
   width: 303px;
   height: 72px;
@@ -256,6 +256,7 @@ h3 {
   padding-right: 26px;
   padding-top: 16px;
 }
+
 .dropBTN {
   padding: 8px;
   border-radius: 8px;
