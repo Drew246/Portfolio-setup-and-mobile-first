@@ -48,7 +48,6 @@ main {
 }
 
 .burgerMenu {
-  height: 24px;
   padding: 8px;
   width: 40px;
   height: 40px;
@@ -95,6 +94,7 @@ main {
   font-weight: 400;
   height: 147px;
 }
+
 section {
   display: flex;
   flex-direction: column;
@@ -197,27 +197,19 @@ article {
   list-style: none;
 }
 
-.canopy li:first-child {
+.lang li {
+  height: inherit;
+  display: grid;
+  background-color: #ebebff;
+  color: #6070ff;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
   list-style: none;
 }
 
-.projectBTN button {
-  padding: 10px;
-  height: 48px;
-  max-width: 162px;
-  top: calc(50% - 48px / 2);
-  border: 1px solid #6070ff;
-  box-sizing: border-box;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  background-color: white;
-  margin: 20px 0;
+.canopy li:first-child {
+  list-style: none;
 }
 
 .about {
@@ -248,14 +240,6 @@ h3 {
   margin: 12px 0;
 }
 
-.lan downBTN {
-  padding: 8px;
-  border-radius: 8px;
-  height: 40px;
-  width: 40px;
-  grid-column-end: auto;
-}
-
 .languages_container {
   border: none;
   display: grid;
@@ -264,6 +248,24 @@ h3 {
 }
 
 button {
+  padding: 10px;
+  height: 48px;
+  max-width: 162px;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background-color: white;
+  margin: 20px 0;
+}
+.projectBTN button {
   padding: 10px;
   height: 48px;
   max-width: 162px;
@@ -317,6 +319,7 @@ input[type="submit"]:active {
   line-height: 20px;
   color: #253858;
 }
+
 .lang {
   display: flex;
   justify-content: space-between;
