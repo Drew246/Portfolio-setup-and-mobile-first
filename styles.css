@@ -207,7 +207,6 @@ article {
   text-align: center;
   list-style: none;
 }
-
 .canopy li:first-child {
   list-style: none;
 }
@@ -265,6 +264,7 @@ button {
   background-color: white;
   margin: 20px 0;
 }
+
 .projectBTN button {
   padding: 10px;
   height: 48px;
@@ -358,17 +358,6 @@ input[type="submit"]:active {
   font-size: 15px;
   line-height: 20px;
   color: #253858;
-}
-
-.lang li {
-  height: inherit;
-  display: grid;
-  background-color: #ebebff;
-  color: #6070ff;
-  border-radius: 8px;
-  align-items: center;
-  text-align: center;
-  list-style: none;
 }
 
 .contactForm {
