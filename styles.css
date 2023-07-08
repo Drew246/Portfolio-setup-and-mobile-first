@@ -4,7 +4,10 @@
   margin: 0;
   padding: 0;
 }
-
+main {
+  max-width: 400px;
+  margin: auto;
+}
 header {
   left: 0;
   right: 0;
@@ -152,15 +155,22 @@ article {
   display: grid;
   margin: 10px 0;
   align-items: center;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto;
 }
 
-.canopy h4 {
-  font-weight: 600;
+span {
   font-size: 13px;
+  font-weight: 600;
   line-height: 16px;
-  color: #7a869a;
+  letter-spacing: 0em;
+  text-align: left;
   color: #344563;
+}
+
+.canopy p {
+  color: #7a869a;
+  line-height: 16px;
+  font-size: 13px;
 }
 
 .frame > div {
@@ -171,6 +181,7 @@ article {
 }
 
 .service {
+  width: 295px;
   font-size: 15px;
   line-height: 24px;
   color: #344563;
@@ -210,6 +221,10 @@ article {
 
 .canopy li:first-child {
   list-style: none;
+}
+
+.about h2 {
+  justify-content: center;
 }
 
 .about {
