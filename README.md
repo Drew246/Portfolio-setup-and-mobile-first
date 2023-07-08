@@ -58,23 +58,24 @@ Clone this repository to your desired folder:
 
 ### Install
 
-Install this project with:
+N/A
 
 
 ### Usage
 
 To run the project, execute the following command:
+There is currently nothing to be run as the project is not complete.
 
 
 ### Run tests
 
-To run tests, run the following command:
+Open in a browser or with a code editor.
 
 
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using a browser.
 
 
 
