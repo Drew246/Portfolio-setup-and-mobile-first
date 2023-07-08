@@ -4,10 +4,13 @@
   margin: 0;
   padding: 0;
 }
+
 main {
   max-width: 400px;
   margin: auto;
+  background-color: #dfe1e6;
 }
+
 header {
   left: 0;
   right: 0;
@@ -44,10 +47,6 @@ nav {
   height: inherit;
   display: flex;
   justify-content: space-between;
-}
-
-main {
-  background-color: #dfe1e6;
 }
 
 .burgerMenu {
@@ -162,7 +161,6 @@ span {
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
-  letter-spacing: 0em;
   text-align: left;
   color: #344563;
 }
