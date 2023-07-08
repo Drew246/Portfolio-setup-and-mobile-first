@@ -225,6 +225,15 @@ span {
   justify-content: center;
 }
 
+section > h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  color: #172b4d;
+  margin: 12px 0;
+}
+
 .about {
   padding: 20px;
   padding-top: 100px;
@@ -235,15 +244,6 @@ span {
   border: none;
   border-radius: 0 70px 0 0;
   display: flex;
-}
-
-section > h2 {
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
-  color: #172b4d;
-  margin: 12px 0;
 }
 
 h3 {
