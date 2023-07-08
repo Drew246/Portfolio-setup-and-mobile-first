@@ -221,10 +221,6 @@ span {
   list-style: none;
 }
 
-.about h2 {
-  justify-content: center;
-}
-
 section > h2 {
   font-weight: bold;
   font-size: 40px;
@@ -232,6 +228,10 @@ section > h2 {
   display: flex;
   color: #172b4d;
   margin: 12px 0;
+}
+
+.about h2 {
+  justify-content: center;
 }
 
 .about {
