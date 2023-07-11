@@ -375,7 +375,7 @@ input[type="submit"]:active {
   padding-top: 80px;
   background-color: #6070ff;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   margin-left: 0;
   margin-right: 0;
   border: none;
