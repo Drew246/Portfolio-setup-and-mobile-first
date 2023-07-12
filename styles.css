@@ -311,13 +311,6 @@ input[type="submit"]:active {
   color: black;
 }
 
-.contactForm > button:active,
-input[type="submit"]:active {
-  background-color: #2230d2;
-  box-shadow: none;
-  color: black;
-}
-
 button:hover,
 input[type="submit"]:hover {
   background-color: #6070ff;
@@ -329,6 +322,13 @@ button:disabled,
 input[type="submit"]:disabled {
   border: 1px solid #5e6c84;
   color: #5e6c84;
+}
+
+.contactForm > button:active,
+input[type="submit"]:active {
+  background-color: #2230d2;
+  box-shadow: none;
+  color: black;
 }
 
 .contactForm > button:hover,
