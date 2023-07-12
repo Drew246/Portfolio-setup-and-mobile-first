@@ -250,20 +250,18 @@
             type="text"
             name="name"
             id="name"
-            minlength="30"
-            placeholder="Lorem Ipsum"
+            max-length="30"
+            placeholder="Your name (first and last)"
             required
           />
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="loremipsum@gmail.com"
+            placeholder="your email address"
             required
           />
-          <textarea name="message" id="message" cols="30" rows="10" required>
-Write your message here</textarea
-          >
+<textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" maxlength="500" required></textarea>
           <input type="submit" value="Get In Touch" />
         </form>
         <div class="line"></div>
