@@ -291,7 +291,7 @@ button {
   letter-spacing: 0.03em;
   color: #396df2;
   background-color: white;
-  margin: 10px 0px 20px 0px;
+  margin: 10px 1px 20px 1px;
 }
 
 input[type="submit"] {
@@ -303,15 +303,16 @@ input[type="submit"] {
   min-width: 120px;
 }
 
+button:active,
+input[type="submit"]:active {
+  background-color: #2230d2;
+  box-shadow: none;
+  color: black;
+}
+
 button:hover,
 input[type="submit"]:hover {
   background-color: #6070ff;
-  color: #fff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-}
-.contactForm > button:hover,
-input[type="submit"]:hover {
-  background-color: #2230d2;
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
@@ -322,11 +323,11 @@ input[type="submit"]:disabled {
   color: #5e6c84;
 }
 
-button:active,
-input[type="submit"]:active {
+.contactForm > button:hover,
+input[type="submit"]:hover {
   background-color: #2230d2;
-  box-shadow: none;
-  color: black;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .mylangs {
