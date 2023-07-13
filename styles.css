@@ -66,14 +66,14 @@ nav {
 }
 
 #headline {
-  background-color: white;
-  background-image: url(header-shapes-mobile.png);
+  background-color: hite;
+  background-image: url(images/header-shapes-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
   border-top: none;
   height: 590px;
-  padding: 20px;
+  padding: 10px 25px;
   border-radius: 0 0 0 70px;
   padding-top: 104px;
 }
@@ -95,6 +95,7 @@ nav {
   line-height: 24px;
   font-weight: 400;
   height: 147px;
+  text-align: left;
 }
 
 section {
@@ -275,52 +276,34 @@ button {
   margin: 20px 0;
 }
 
-.projectBTN button {
-  padding: 10px;
-  height: 48px;
-  max-width: 162px;
-  top: calc(50% - 48px / 2);
-  border: 1px solid #6070ff;
-  box-sizing: border-box;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  background-color: white;
-  margin: 20px 0;
-}
-
 input[type="submit"] {
-  width: 30%;
+  width: 48%;
   background-color: white;
   color: #6070ff;
+  font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   min-width: 120px;
 }
 
-button:hover,
-input[type="submit"]:hover {
+button:hover {
   background-color: #6070ff;
-  color: white;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+  box-shadow: 1px 8px 16px rgba(64, 83, 252, 0.24);
 }
 
-button:disabled,
-input[type="submit"]:disabled {
+button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+button:disabled {
   border: 1px solid #5e6c84;
   color: #5e6c84;
 }
 
-button:active,
-input[type="submit"]:active {
-  background-color: #2230d2;
-  box-shadow: none;
-  color: white;
+button:enabled {
+  border: 1px solid #6070ff;
 }
 
 .mylangs {
@@ -371,15 +354,18 @@ input[type="submit"]:active {
 }
 
 .contactForm {
-  padding: 20px;
-  padding-top: 80px;
+  padding-bottom: 20px;
+  padding-top: 70px;
   background-color: #6070ff;
   background-repeat: no-repeat;
-  background-size: cover;
   margin-left: 0;
+  background-position: right;
+  height: 779px;
   margin-right: 0;
+  margin-top: -60px;
   border: none;
   border-radius: 70px 0 0 0;
+  background-image: url(images/contact\ form\ shapes-mobile.svg);
 }
 
 .txt {
@@ -387,13 +373,17 @@ input[type="submit"]:active {
   margin: 20px;
   padding: 10px;
   text-align: center;
+  font-weight: 700;
+  line-height: 52px;
+  font-size: 40px;
 }
 
-.txt > h1 {
+.txt > h2 {
   font-weight: bold;
   font-size: 40px;
-  margin: 20px;
+  margin-bottom: 45px;
   line-height: 52px;
+  margin-top: 10px;
 }
 
 .txt > p {
@@ -401,16 +391,19 @@ input[type="submit"]:active {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+  margin-top: -30px;
+  padding-bottom: 0%;
 }
 
 form {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 5%;
+  padding: 0% 5% 0% 5%;
 }
 
 input {
-  width: 90%;
+  width: 100%;
   height: 48px;
   margin: 10px 0;
   border: none;
@@ -422,7 +415,7 @@ input {
 }
 
 textarea {
-  width: 90%;
+  width: 100%;
   margin: 10px 0;
   border: none;
   padding: 20px;
@@ -430,6 +423,7 @@ textarea {
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
+  height: 170px;
 }
 
 .line {
