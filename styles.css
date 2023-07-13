@@ -3,11 +3,9 @@
   font-family: poppins, sans-serif;
   margin: 0;
   padding: 0;
-  max-width: 375px;
 }
 
 main {
-  margin: auto;
   background-color: #f7f7f9;
 }
 
@@ -66,7 +64,7 @@ nav {
 }
 
 #headline {
-  background-color: hite;
+  background-color: white;
   background-image: url(images/header-shapes-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,7 +89,7 @@ nav {
 
 .intro {
   color: rgba(52, 69, 99, 1);
-  width: 327px;
+  min-width: 327px;
   line-height: 24px;
   font-weight: 400;
   height: 147px;
@@ -118,18 +116,21 @@ section {
   height: 20px;
   justify-content: space-between;
   list-style-type: none;
-  margin: 10px;
+  margin: 10px 0%;
   position: static;
 }
 
 .works_container {
-  margin: 50px 0;
+  justify-content: center;
+  margin: 0 30px;
   padding-top: 11px;
-  padding-bottom: 11px;
-  min-width: 327px;
-  height: 2560px;
   display: grid;
   grid-template-columns: auto;
+  width: 100%;
+}
+
+.card_image {
+  width: 68vh;
 }
 
 article {
@@ -233,9 +234,9 @@ section > h2 {
 
 .about {
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 50px;
   background-color: white;
-  margin-top: 200px;
+  margin-top: 20px;
   margin-left: 0;
   margin-right: 0;
   border: none;
@@ -243,18 +244,19 @@ section > h2 {
   display: flex;
 }
 
-h3 {
+section h3 {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
   margin: 12px 0;
+  font-weight: 400;
 }
 
 .languages_container {
   border: none;
   display: grid;
   grid-template-rows: auto auto auto;
-  width: 327px;
+  align-content: center;
 }
 
 button {
@@ -327,7 +329,9 @@ button:enabled {
   height: 72px;
   display: flex;
   align-items: center;
-  color: black;
+  min-width: 327px;
+
+  font-weight: 400;
 }
 
 .toggle {
@@ -378,21 +382,21 @@ button:enabled {
   font-size: 40px;
 }
 
-.txt > h2 {
-  font-weight: bold;
-  font-size: 40px;
-  margin-bottom: 45px;
-  line-height: 52px;
-  margin-top: 10px;
-}
-
-.txt > p {
+.txt p {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
   color: #ebebff;
   margin-top: -30px;
   padding-bottom: 0%;
+}
+
+.txt > h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 45px;
+  line-height: 52px;
+  margin-top: 10px;
 }
 
 form {
