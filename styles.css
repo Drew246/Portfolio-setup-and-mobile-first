@@ -356,6 +356,25 @@ body {
   margin: 0 auto;
 }
 
+button {
+  padding: 10px;
+  height: 48px;
+  max-width: 162px;
+  top: calc(50% - 48px / 2);
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background-color: white;
+  margin: 20px 0;
+}
+
 .form button {
   align-items: center;
   justify-content: center;
@@ -376,23 +395,21 @@ body {
   border: none;
 }
 
-button {
-  padding: 10px;
-  height: 48px;
-  max-width: 162px;
-  top: calc(50% - 48px / 2);
-  border: 1px solid #6070ff;
-  box-sizing: border-box;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 17px;
+.myself button {
+  width: 140px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8em;
   line-height: 24px;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   color: #396df2;
-  background-color: white;
-  margin: 20px 0;
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid #396df2;
+  border-radius: 10px;
+  height: 50px;
+  margin: 30px 0 20px 0;
 }
 input[type="submit"] {
   width: 48%;
@@ -403,6 +420,7 @@ input[type="submit"] {
   line-height: 24px;
   min-width: 120px;
 }
+
 .work-btn:hover {
   background-color: #6070ff;
   color: #fff;
@@ -498,7 +516,6 @@ textarea {
 
   .headline {
     background: #fff url("images/Header\ bg@1x.png") no-repeat;
-
     background-size: cover;
     display: flex;
     flex-direction: column;
