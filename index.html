@@ -1,144 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="icon"><a href="">My Logo</a></div>
-        <img
-          class="burgerMenu"
-          src="images/burger.png"
-          alt="burger menu icon"
-        />
+      <nav class="navbar">
+        <a href="#" class="my-logo">MY LOGO</a>
+        <ul class="desktop-menu">
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
-    </header>
-    <main>
-      <section id="headline">
-        <h1 id="greeting">I’m Andrew. Glad to see you!</h1>
-        <p class="intro">
+      <section class="headline">
+        <h1>
+          I’m Drew. <br />
+          Glad to see you!
+        </h1>
+        <p class="content">
           I’m a software developer! I can help you build a product , feature or
           website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hesitate to contact
+          you see and have a project you need coded, don’t hestiate to contact
           me.
         </p>
         <p class="connect">LET'S CONNECT</p>
-        <ul class="social">
+        <ul class="social-media">
           <li>
-            <a href="https://www.twitter.com" target="_self"
-              ><img src="images/tw.png" alt="twitter icon"
-            /></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com" target="_self"
-              ><img src="images/linkedin.png" alt="linkedin icon"
-            /></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
           </li>
           <li>
-            <a href="https://www.medium.com" target="_self"
-              ><img src="images/medium.png" alt="medium icon"
-            /></a>
+            <a href="#"><i class="fa fa-medium"></i></a>
           </li>
           <li>
-            <a href="https://www.github.com" target="_self"
-              ><img src="images/github.png" alt="github icon"
-            /></a>
+            <a href="#"><i class="fa fa-github"></i></a>
           </li>
           <li>
-            <a href="https://www.vectorstock.com" target="_self"
-              ><img src="images/v.png" alt="vector stock icon"
-            /></a>
+            <a href="#"><i class="fa fa-angellist"></i></a>
           </li>
         </ul>
       </section>
+    </header>
 
+    <main>
       <section class="work-section">
         <div class="work">
           <div class="img-card">
-            <img src="images/Snapshoot Portfolio1.png" class="image1" alt="" />
-            <img src="images/natureDesktop.png" class="image2" alt="" />
-          </div>
-          <div class="card-contents">
-            <h2 class="card-title">Facebook 360</h2>
-            <h2 class="card-title_desktop">Tonic</h2>
-            <div class="counter">
-              <span>Facebook</span>
-              <span class="counters"></span>
-              <span>Full-Stack Dev</span>
-              <span class="counters"></span>
-              <span>2015</span>
-            </div>
-            <p class="mobile-description">
-              Exploring the future of media in Facebook's first Virtual Reality
-              app; a place to discover and enjoy 360 photos and videos on Gear
-              VR.
-            </p>
-            <p class="desktop-description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-
-            <ul class="techs">
-              <li class="techs-item">
-                <a href="#" class="techs-link">html</a>
-              </li>
-              <li class="techs-item"><a href="#" class="techs-link">css</a></li>
-              <li class="techs-item">
-                <a href="#" class="techs-link">javaScript</a>
-              </li>
-            </ul>
-            <button type="button" class="work-btn">See Project</button>
-          </div>
-        </div>
-        <div class="work">
-          <div class="img-card" id="stories">
-            <img src="images/Snapshoot Portfolio2.png" class="image1" alt="" />
-            <img src="images/storiesDesktop.png" class="image2" alt="" />
-          </div>
-          <div class="card-contents">
-            <h2 class="card-title">Uber Navigation</h2>
-            <h2 class="card-title_desktop">Multi-Post Stories</h2>
-            <div class="counter">
-              <span>Uber</span>
-              <span class="counters"></span>
-              <span>Lead Developer</span>
-              <span class="counters"></span>
-              <span>2018</span>
-            </div>
-            <p class="mobile-description">
-              A smart assistant to make driving more safe, efficient, and fun by
-              unlocking your most expensive computer: your car.
-            </p>
-            <p class="desktop-description">
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-
-            <ul class="techs">
-              <li class="techs-item">
-                <a href="#" class="techs-link">html</a>
-              </li>
-              <li class="techs-item"><a href="#" class="techs-link">css</a></li>
-              <li class="techs-item">
-                <a href="#" class="techs-link">javaScript</a>
-              </li>
-            </ul>
-            <button type="button" class="work-btn">See Project</button>
-          </div>
-        </div>
-        <div class="work">
-          <div class="img-card" id="facebook">
-            <img src="images/Snapshoot Portfolio3.png" class="image1" alt="" />
-            <img src="images/Facebook360Desktop.png" class="image2" alt="" />
+            <img src="images/Snapshoot Portfolio1.png" class="mobile" alt="" />
+            <img src="images/natureDesktop.png" class="desktop" alt="" />
           </div>
           <div class="card-contents">
             <h2 class="card-title">Tonic</h2>
@@ -149,14 +83,9 @@
               <span class="counters"></span>
               <span>2015</span>
             </div>
-            <p class="mobile-description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <p class="desktop-description">
-              Exploring the future of media in Facebook's first Virtual Reality
-              app; a place to discover and enjoy 360 photos and videos on Gear
-              VR.
+            <p class="card-desc">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
             </p>
             <ul class="techs">
               <li class="techs-item">
@@ -170,147 +99,361 @@
             <button type="button" class="work-btn">See Project</button>
           </div>
         </div>
+      </section>
+      <!-- mobile -->
+      <section class="work-section mobile">
         <div class="work">
-          <div class="img-card" id="uber">
-            <img src="images/storiesMobile.png" class="image1" alt="" />
-            <img src="images/UberDesktop.png" class="image2" alt="" />
+          <div class="img-card">
+            <img src="images/Snapshoot Portfolio2.png" class="mobile" alt="" />
           </div>
           <div class="card-contents">
-            <h2 class="card-title">Multi-Post <br />Stories</h2>
-            <div class="counter">
-              <span>Facebook</span>
-              <span class="counters"></span>
-              <span>Full-Stack Dev</span>
-              <span class="counters"></span>
-              <span>2015</span>
+            <div class="mobile">
+              <h2 class="card-title">Multi-Post Stories</h2>
+              <div class="counter">
+                <span>CANOPY</span>
+                <span class="counters"></span>
+                <span>Back End Dev</span>
+                <span class="counters"></span>
+                <span>2015</span>
+              </div>
+              <p class="card-desc">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+              <ul class="techs">
+                <li class="techs-item">
+                  <a href="#" class="techs-link">html</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">css</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">javaScript</a>
+                </li>
+              </ul>
+              <button type="button" class="work-btn">See Project</button>
             </div>
-            <p class="mobile-description">
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-            <p class="desktop-description">
-              A smart assistant to make driving more safe, efficient, and fun by
-              unlocking your most expensive computer: your car.
-            </p>
-
-            <ul class="techs">
-              <li class="techs-item">
-                <a href="#" class="techs-link">html</a>
-              </li>
-              <li class="techs-item"><a href="#" class="techs-link">css</a></li>
-              <li class="techs-item">
-                <a href="#" class="techs-link">javaScript</a>
-              </li>
-            </ul>
-            <button type="button" class="work-btn">See Project</button>
+          </div>
+        </div>
+      </section>
+      <!-- desktop -->
+      <section class="work-section desktop">
+        <div class="work">
+          <div class="card-contents">
+            <div class="desktop">
+              <h2 class="card-title">Multi-Post Stories</h2>
+              <div class="counter">
+                <span>FACEBOOK</span>
+                <span class="counters"></span>
+                <span>Full Stack Dev</span>
+                <span class="counters"></span>
+                <span>2015</span>
+              </div>
+              <p class="card-desc">
+                Experimental content creation feature that allows users to add
+                to an existing stories over the course of a day without spamming
+                their friends.
+              </p>
+              <ul class="techs">
+                <li class="techs-item">
+                  <a href="#" class="techs-link">html</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">ruby on rails</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">css</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">javaScript</a>
+                </li>
+              </ul>
+              <button type="button" class="work-btn">See Project</button>
+            </div>
+          </div>
+          <div class="img-card">
+            <img src="images/storiesDesktop.png" class="desktop" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- mobile -->
+      <section class="work-section mobile">
+        <div class="work">
+          <div class="img-card">
+            <img src="images/Snapshoot Portfolio3.png" class="mobile" alt="" />
+          </div>
+          <div class="card-contents">
+            <div class="mobile">
+              <h2 class="card-title">Tonic</h2>
+              <div class="counter">
+                <span>CANOPY</span>
+                <span class="counters"></span>
+                <span>Back End Dev</span>
+                <span class="counters"></span>
+                <span>2015</span>
+              </div>
+              <p class="card-desc">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+              <ul class="techs">
+                <li class="techs-item">
+                  <a href="#" class="techs-link">html</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">css</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">javaScript</a>
+                </li>
+              </ul>
+              <button type="button" class="work-btn">See Project</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- desktop -->
+      <section class="work-section desktop">
+        <div class="work">
+          <div class="img-card">
+            <img src="images/Facebook360Desktop.png" class="desktop" alt="" />
+          </div>
+          <div class="card-contents">
+            <div class="desktop">
+              <h2 class="card-title">Facebook 360</h2>
+              <div class="counter">
+                <span>FACEBOOK</span>
+                <span class="counters"></span>
+                <span>Full Stack Dev</span>
+                <span class="counters"></span>
+                <span>2015</span>
+              </div>
+              <p class="card-desc">
+                Exploring the future of media in Facebook's first Virtual
+                Reality app; a place to discover and enjoy 360 photos and videos
+                on Gear VR.
+              </p>
+              <ul class="techs">
+                <li class="techs-item">
+                  <a href="#" class="techs-link">html</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">ruby on rails</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">css</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">javaScript</a>
+                </li>
+              </ul>
+              <button type="button" class="work-btn">See Project</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- mobile -->
+      <section class="work-section mobile">
+        <div class="work">
+          <div class="img-card">
+            <img src="images/storiesMobile.png" class="mobile" alt="" />
+          </div>
+          <div class="card-contents">
+            <div class="mobile">
+              <h2 class="card-title">Multi-Post Stories</h2>
+              <div class="counter">
+                <span>CANOPY</span>
+                <span class="counters"></span>
+                <span>Back End Dev</span>
+                <span class="counters"></span>
+                <span>2015</span>
+              </div>
+              <p class="card-desc">
+                A daily selection of privately personalized reads; no accounts
+                or sign-ups required.
+              </p>
+              <ul class="techs">
+                <li class="techs-item">
+                  <a href="#" class="techs-link">html</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">css</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">javaScript</a>
+                </li>
+              </ul>
+              <button type="button" class="work-btn">See Project</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- desktop -->
+      <section class="work-section desktop">
+        <div class="work">
+          <div class="card-contents">
+            <div class="desktop">
+              <h2 class="card-title">Uber Navigation</h2>
+              <div class="counter">
+                <span>Uber</span>
+                <span class="counters"></span>
+                <span>Lead Developer</span>
+                <span class="counters"></span>
+                <span>2018</span>
+              </div>
+              <p class="card-desc">
+                A smart assistant to make driving more safe, efficient, and fun
+                by unlocking your most expensive computer your car
+              </p>
+              <ul class="techs">
+                <li class="techs-item">
+                  <a href="#" class="techs-link">html</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">ruby on rails</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">css</a>
+                </li>
+                <li class="techs-item">
+                  <a href="#" class="techs-link">javaScript</a>
+                </li>
+              </ul>
+              <button type="button" class="work-btn">See Project</button>
+            </div>
+          </div>
+          <div class="img-card">
+            <img src="images/UberDesktop.png" class="desktop" alt="" />
           </div>
         </div>
       </section>
 
-      <section class="about">
-        <h2>About Myself</h2>
-        <h3>
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </h3>
-        <p class="connect">LET’S CONNECT</p>
-        <ul class="social">
-          <li>
-            <a href="https://www.twitter.com" target="_self"
-              ><img src="images/tw.png" alt="twitter icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com" target="_self"
-              ><img src="images/linkedin.png" alt="linkedin icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.medium.com" target="_self"
-              ><img src="images/medium.png" alt="medium icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.github.com" target="_self"
-              ><img src="images/github.png" alt="github icon"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.vectorstock.com" target="_self"
-              ><img src="images/v.png" alt="vector stock icon"
-            /></a>
-          </li>
-        </ul>
-        <button type="button">Get my resume</button>
-        <article class="languages_container">
-          <div class="lang tags">
-            <h3>Languages</h3>
-            <img class="downBTN" src="images/downBTN.png" alt="togbtn" />
+      <section class="about-myself-section">
+        <div class="about-myself">
+          <div class="my-resume">
+            <div class="myself">
+              <h2 class="myself-title">About Myself</h2>
+              <p class="contents">
+                Hello I’m a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
+              </p>
+              <p class="connect">LET'S CONNECT</p>
+              <ul class="social-media">
+                <li>
+                  <a href="#"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-angellist"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-medium"></i></a>
+                </li>
+              </ul>
+              <button type="button" class="work-btn">Get my resume</button>
+            </div>
+
+            <div class="category">
+              <div class="categories">
+                <ul>
+                  <li>
+                    <p>Languages</p>
+                    <i class="fa fa-angle-down"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="stack">
+                <ul>
+                  <li>
+                    <img src="images/js.png" alt="" />
+                    <p>JavaScript</p>
+                  </li>
+                  <li>
+                    <img src="images/html.png" alt="" />
+                    <p>HTML</p>
+                  </li>
+                  <li>
+                    <img src="images/css.png" alt="" />
+                    <p>CSS</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="categories">
+                <ul>
+                  <li>
+                    <p>Frameworks</p>
+                    <i class="fa fa-angle-right"></i>
+                  </li>
+                </ul>
+                <hr />
+                <ul>
+                  <li>
+                    <p>Skills</p>
+                    <i class="fa fa-angle-right"></i>
+                  </li>
+                </ul>
+                <hr />
+              </div>
+            </div>
           </div>
-          <ul class="toggle">
-            <li class="lan">
-              <img src="images/js.png" alt="js icon" />
-              <p>JavaScript</p>
-            </li>
-            <li class="lan">
-              <img src="images/html.png" alt="html icon" />
-              <p>HTML</p>
-            </li>
-            <li class="lan">
-              <img src="images/css.png" alt="css icon" />
-              <p>CSS</p>
-            </li>
-          </ul>
-          <div class="lang">
-            <h3>Frameworks</h3>
-            <img class="downBTN" src="images/rightBTN.png" alt="togbtn" />
-          </div>
-          <div class="lang">
-            <h3>Skills</h3>
-            <img class="downBTN" src="images/rightBTN.png" alt="togbtn" />
-          </div>
-        </article>
-      </section>
-      <section class="contactForm">
-        <div class="txt">
-          <h2>Contact me</h2>
-          <p>
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it!
-          </p>
+
+          <section class="contact-me-section">
+            <div class="contact">
+              <h4 class="contact-me">Contact me</h4>
+              <p class="contact-info">
+                If you have an application you are interested in developing, a
+                feature that you need built or a project that needs coding. I’d
+                love to help with it
+              </p>
+              <form
+                class="form"
+                id="form"
+                action="https://formspree.io/f/mdovbonp"
+                method="post"
+              >
+                <label for="fullname">
+                  <input
+                    name="fullname"
+                    type="text"
+                    id="fullname"
+                    placeholder="Your Full Name"
+                    maxlength="30"
+                    required
+                  />
+                </label>
+                <label for="email">
+                  <input
+                    name="Email"
+                    id="email"
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </label>
+                <label for="message">
+                  <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="10"
+                    placeholder="Write your message here"
+                    maxlength="500"
+                    required
+                  ></textarea>
+                </label>
+                <button type="submit" class="work-btn">Get in touch</button>
+              </form>
+              <div class="shape"></div>
+            </div>
+          </section>
         </div>
-        <form action="https://formspree.io/f/mknyobde" method="post">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            max-length="30"
-            placeholder="Your name (first and last)"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="your email address"
-            required
-          />
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Write your message here..."
-            maxlength="500"
-            required
-          ></textarea>
-          <button type="submit">Get in touch</button>
-        </form>
-        <div class="line"></div>
       </section>
     </main>
   </body>
