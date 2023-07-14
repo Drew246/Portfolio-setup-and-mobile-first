@@ -76,12 +76,6 @@ nav {
   padding-top: 104px;
   @media (min-width: 768px) {
     background-image: url(images/Header\ bg@1x.png);
-    display: inline-flex;
-    height: 846px;
-    padding: 289px 260px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
   }
 }
 
@@ -94,7 +88,6 @@ nav {
   font-weight: 700;
   line-height: 52px;
   text-align: left;
-  @media (min-width: 768px);
 }
 
 .intro {
@@ -129,15 +122,61 @@ section {
   margin: 10px 0%;
   position: static;
 }
+.card-title_desktop,
+.image2,
+.desktop-description {
+  display: none;
+}
 
-/*.works_container {
-  justify-content: center;
-  margin: 0 30px;
-  padding-top: 11px;
-  display: grid;
-  grid-template-columns: auto;
-  width: 100%;
-}*/
+@media (min-width: 768px) {
+  .work-section {
+    padding: 142px;
+    flex-direction: column;
+    align-items: center;
+    margin: 142px;
+    width: 1440px;
+    height: 2694px;
+    top: 917px;
+  }
+
+  .work {
+    display: grid;
+    width: 1156px;
+    height: 496px;
+    grid-template-columns: auto auto;
+  }
+
+  .image1,
+  .mobile-description,
+  .card-title {
+    display: none;
+  }
+  .image2 {
+    width: 544px;
+    height: 448px;
+    flex-shrink: 0;
+    display: block;
+  }
+  .card-title_desktop {
+    display: block;
+  }
+  .card-contents {
+    width: 544px;
+    height: 445px;
+    margin-top: 24px;
+    left: 590px;
+    padding: 24px;
+  }
+  .desktop-description {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 24px;
+    margin: 5px 0;
+    color: #344563;
+  }
+}
 
 .work {
   display: grid;
@@ -192,7 +231,7 @@ section {
   margin: 0 8px;
 }
 
-.work .card-desc {
+.mobile-description {
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
@@ -227,7 +266,7 @@ section {
   color: #6070ff;
 }
 
-.work .work-btn {
+work .work-btn {
   width: 149px;
   font-style: normal;
   font-weight: 600;
@@ -243,10 +282,10 @@ section {
   height: 50px;
   margin: 10px 0 20px 0;
 }
-*/ .card_image {
+/* .card_image {
   width: 68vh;
 }
-
+*/
 article {
   background-color: white;
   border: 2px solid #dfe1e6;
@@ -347,7 +386,7 @@ section > h2 {
 }
 
 .about {
-  padding: 15px;
+  padding: 20px;
   padding-top: 50px;
   background-color: white;
   margin-top: 20px;
@@ -472,13 +511,12 @@ button:enabled {
 }
 
 .contactForm {
-  padding-bottom: 2px;
+  padding-bottom: 20px;
   padding-top: 70px;
   background-color: #6070ff;
   background-repeat: no-repeat;
-  margin-bottom: 5px;
+  margin-left: 0;
   background-position: right;
-  height: 779px;
   margin-right: 0;
   margin-top: -60px;
   border: none;
