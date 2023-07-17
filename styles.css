@@ -102,7 +102,7 @@ body {
 
 .categories ul li {
   display: flex;
-  flex-direction: row;Drew246/Portfolio-deployment
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding-right: 30px;
