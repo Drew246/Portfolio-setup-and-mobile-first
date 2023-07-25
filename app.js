@@ -5,7 +5,7 @@ const mobileMenuButton = document.querySelector('.mobile-menu');
 // CREATE FUNCTIONS (toggle-menu)
 function toggleMobileMenu() {
   mobileMenuList.classList.toggle('show');
-  mobileMenuList.style.backgroundColor = 'Blue';
+  mobileMenuList.style.backgroundColor = '#6070ff';
   mobileMenuList.style.color = 'white';
   mobileMenuButton.classList.toggle('hidden');
 }

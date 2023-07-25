@@ -17,20 +17,37 @@ body {
 }
 
 .navbar {
-  min-height: 71px;
+  height: 71px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
-  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  background-color: white;
 }
 
 .mobile-menu-list {
   display: none;
 }
 
+.nav-link {
+  color: white;
+}
+
 .mobile-menu-list.show {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+  padding: 50px;
+
+  gap: 40px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .mobile-menu-list.show + .mobile-menu {
@@ -67,16 +84,6 @@ body {
   animation: rubberBand 2s;
 }
 
-@keyframes my-logo {
-  50% {
-    transform: rotate(180deg);
-  }
-
-  75% {
-    text-shadow: 3px 9px 1px grey;
-  }
-}
-
 .bar {
   display: block;
   width: 20px;
@@ -95,9 +102,12 @@ body {
   flex-direction: column;
   border-bottom-left-radius: 75px;
   padding: 55px 20px 0;
+  height: px;
 }
 
 .headline h1 {
+  height: 8em;
+  padding-top: 3em;
   width: 230px;
   font-style: normal;
   font-weight: 700;
