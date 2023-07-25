@@ -4,18 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-/* Add this CSS to hide the mobile menu by default */
-.mobile-menu-list {
-  display: none;
-}
 
-/* Add this CSS to show the mobile menu when the "show" class is applied */
-.mobile-menu-list.show {
-  display: block;
-}
-.mobile-menu.hidden {
-  display: none;
-}
 body {
   background-color: #e5e5e5;
 }
@@ -34,6 +23,28 @@ body {
   background-color: #fff;
 }
 
+.mobile-menu-list {
+  display: none;
+}
+
+.mobile-menu-list.show {
+  display: block;
+}
+
+.mobile-menu-list.show + .mobile-menu {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
+.mobile-menu-list.show + .close-menu {
+  display: inline-block;
+}
+.mobile-menu.hidden {
+  display: none;
+}
 .my-logo {
   font-style: normal;
   font-weight: 700;
@@ -637,7 +648,7 @@ textarea {
     margin: 15px 0 0 0;
   }
 
-  .contact-me-section {
+  #contact {
     margin: 0;
   }
 
