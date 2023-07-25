@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -42,9 +44,11 @@ body {
 .mobile-menu-list.show + .close-menu {
   display: inline-block;
 }
+
 .mobile-menu.hidden {
   display: none;
 }
+
 .my-logo {
   font-style: normal;
   font-weight: 700;

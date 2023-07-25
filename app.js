@@ -1,15 +1,23 @@
+// DECLARE VARIABLES
+const mobileMenuList = document.getElementById('mobileMenuList');
+const mobileMenuButton = document.querySelector('.mobile-menu');
+
+// CREATE FUNCTIONS (toggle-menu)
 function toggleMobileMenu() {
-    var mobileMenuList = document.getElementById("mobileMenuList");
-    mobileMenuList.classList.toggle("show");    
-    var mobileMenuButton = document.querySelector(".mobile-menu");
-    mobileMenuButton.classList.toggle("hidden");
-
+  mobileMenuList.classList.toggle('show');
+  mobileMenuList.style.backgroundColor = 'Blue';
+  mobileMenuList.style.color = 'white';
+  mobileMenuButton.classList.toggle('hidden');
 }
+
+// Add an event listener
+toggleMobileMenu.addEventListener('click, mobileMenuList');
+
+// Close function for mobile-menu
 function closeMobileMenu() {
-    var mobileMenuList = document.getElementById("mobileMenuList");
-    mobileMenuList.classList.remove("show");
-    var mobileMenuButton = document.querySelector(".mobile-menu");
-    mobileMenuButton.classList.remove("hidden");
-  }
+  mobileMenuList.classList.remove('show');
+  mobileMenuButton.classList.remove('hidden');
+}
 
-
+// An event listener
+closeMobileMenu.addEventListener('click', closeMobileMenu);
