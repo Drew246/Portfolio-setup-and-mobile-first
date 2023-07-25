@@ -4,7 +4,18 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/* Add this CSS to hide the mobile menu by default */
+.mobile-menu-list {
+  display: none;
+}
 
+/* Add this CSS to show the mobile menu when the "show" class is applied */
+.mobile-menu-list.show {
+  display: block;
+}
+.mobile-menu.hidden {
+  display: none;
+}
 body {
   background-color: #e5e5e5;
 }
