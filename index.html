@@ -17,7 +17,7 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="#" class="my-logo">MY LOGO</a>
+        <a href="#" class="my-logo">Andrew</a>
         <ul class="desktop-menu">
           <li class="nav-item">
             <a href="#portfolio" class="nav-link">Portfolio</a>
@@ -29,46 +29,65 @@
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
-        <div class="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-      <section class="headline">
-        <h1>
-          I’m Drew. <br />
-          Glad to see you!
-        </h1>
-        <p class="content">
-          I’m a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
-          me.
-        </p>
-        <p class="connect">LET'S CONNECT</p>
-        <ul class="social-media">
-          <li>
-            <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="mobile-menu" onclick="toggleMobileMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <ul class="mobile-menu-list" id="mobileMenuList">
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link" onclick="closeMobileMenu()"
+              >Portfolio</a
+            >
           </li>
-          <li>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" onclick="closeMobileMenu()"
+              >About</a
+            >
           </li>
-          <li>
-            <a href="#"><i class="fa fa-medium"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-github"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-angellist"></i></a>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" onclick="closeMobileMenu()"
+              >Contact</a
+            >
           </li>
         </ul>
-      </section>
+
+        <a href="#" class="close-menu" onclick="toggleMobileMenu()">
+          <i class="fa fa-times"></i>
+        </a>
+      </nav>
     </header>
 
+    <section class="headline">
+      <h1>
+        I’m Drew. <br />
+        Glad to see you!
+      </h1>
+      <p class="content">
+        I’m a software developer! I can help you build a product , feature or
+        website Look through some of my work and experience! If you like what
+        you see and have a project you need coded, don’t hestiate to contact me.
+      </p>
+      <p class="connect">LET'S CONNECT</p>
+      <ul class="social-media">
+        <li>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-medium"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-angellist"></i></a>
+        </li>
+      </ul>
+    </section>
+
     <main>
-      <section class="work-section">
+      <section id="portfolio">
         <div class="work">
           <div class="img-card">
             <img src="images/Snapshoot Portfolio1.png" class="mobile" alt="" />
@@ -328,7 +347,7 @@
         </div>
       </section>
 
-      <section class="about-myself-section">
+      <section id="about">
         <div class="about-myself">
           <div class="my-resume">
             <div class="myself">
@@ -404,7 +423,7 @@
             </div>
           </div>
 
-          <section class="contact-me-section">
+          <section id="contact">
             <div class="contact">
               <h4 class="contact-me">Contact me</h4>
               <p class="contact-info">
@@ -456,5 +475,6 @@
         </div>
       </section>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
