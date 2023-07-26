@@ -1,6 +1,7 @@
 // DECLARE VARIABLES
 const mobileMenuList = document.getElementById('mobileMenuList');
 const mobileMenuButton = document.querySelector('.mobile-menu');
+const closeMenu = document.querySelector('.close-menu');
 
 // CREATE FUNCTIONS (toggle-menu)
 function toggleMobileMenu() {
@@ -8,6 +9,7 @@ function toggleMobileMenu() {
   mobileMenuList.style.color = 'white';
   mobileMenuButton.classList.toggle('hidden');
   mobileMenuList.style.backgroundColor = '#6070ff';
+  closeMenu.classList.toggle('show');
   }
 
 // Add an event listener
