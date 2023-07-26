@@ -10,9 +10,9 @@ function toggleMobileMenu() {
   mobileMenuButton.classList.toggle('hidden');
   mobileMenuList.style.backgroundColor = '#6070ff';
   closeMenu.classList.toggle('show');
-  }
+}
 
-  // Add an event listener
+// Add an event listener
 toggleMobileMenu.addEventListener('click, mobileMenuList');
 
 // Close function for mobile-menu
