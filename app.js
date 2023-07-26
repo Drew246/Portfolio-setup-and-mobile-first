@@ -12,7 +12,7 @@ function toggleMobileMenu() {
   closeMenu.classList.toggle('show');
   }
 
-// Add an event listener
+  // Add an event listener
 toggleMobileMenu.addEventListener('click, mobileMenuList');
 
 // Close function for mobile-menu
