@@ -39,7 +39,6 @@ body {
   font-size: 32px;
   display: flex;
   flex-direction: column;
-
   padding: 50px;
   gap: 40px;
   position: fixed;
@@ -92,11 +91,6 @@ body {
   animation: my-logo infinite 5s ease-in-out;
 }
 
-.mobile-menu {
-  color: #6070ff;
-  font-size: 25px;
-}
-
 .headline {
   background: #fff url("images/header-shapes-mobile.png") no-repeat;
   background-size: 100%;
@@ -108,7 +102,6 @@ body {
 }
 
 .headline h1 {
-  height: 8em;
   padding-top: 3em;
   width: 230px;
   font-style: normal;
