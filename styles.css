@@ -101,15 +101,9 @@ body {
   animation: my-logo infinite 5s ease-in-out;
 }
 
-.bar {
-  display: block;
-  width: 20px;
-  height: 2px;
-  margin: 5px auto;
-  margin-right: 10px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  background-color: #6070ff;
+.mobile-menu {
+  color: #6070ff;
+  font-size: 25px;
 }
 
 .headline {
