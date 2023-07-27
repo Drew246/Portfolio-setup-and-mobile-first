@@ -9,9 +9,9 @@
 
 body {
   background-color: #e5e5e5;
+  line-height: 1.6;
 }
-
-.desktop-menu,
+:root .desktop-menu,
 .desktop {
   display: none;
 }
@@ -503,6 +503,41 @@ textarea {
   bottom: 8px;
   margin: 14% auto 2%;
 }
+.popup-page {
+  position: fixed;
+  top: 120px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.popup-page .background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(211, 211, 212, 0.85);
+  backdrop-filter: blur(5px);
+}
+
+.popup-page .card {
+  position: relative;
+  margin-top: 50%;
+  transform: translateY(-20%);
+  width: 90%;
+}
+
+.popup-page .card .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 15px;
+  color: #7a869a;
+  border: none;
+  background: transparent;
+}
 
 @media only screen and (min-width: 768px) {
   .navbar {
@@ -565,7 +600,7 @@ textarea {
     margin-bottom: 5%;
   }
 
-  .work {
+  /* .work {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -583,7 +618,7 @@ textarea {
   .work img {
     width: 100%;
     height: auto;
-  }
+  } */
 
   .img-card,
   .card-contents,
@@ -704,5 +739,36 @@ textarea {
   input,
   textarea {
     width: 500px;
+  }
+
+  .popup-page .snap-image,
+  .popup-page .snap-image img {
+    height: 360px;
+    backdrop-filter: blur(5px);
+  }
+
+  .popup-page .card {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+  .popup-page .flex-nl {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+  }
+  .popup-page .flex-nl p {
+    grid-column: 1/1;
+    grid-row: 1/3;
+  }
+
+  .popup-page {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
   }
 }
