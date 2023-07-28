@@ -150,7 +150,9 @@ if (portfolioItems) {
           `;
           wrapper.appendChild(popupPage);
           const closeButton = popupPage.querySelector('.close-btn');
-          
+          closeButton.addEventListener('click', () => {
+            wrapper.removeChild(popupPage);
+          });
         }
       }
     });
