@@ -138,9 +138,9 @@ if (portfolioItems) {
                 </ul>
                   <div class="link-button">
                     <button class="btn-default"><a href="${portfolioItemsDetail[i].live} class="see-btn">See live<img
-                    src="images/see-images/live.png" alt="live-link" /></a></button>
+                    src="images/live.png" alt="live-link" /></a></button>
                     <button class="btn-default"><a href="${portfolioItemsDetail[i].source} class="see-btn">See source<img
-                    src="images/see-images/Vector.png" alt="live-link" /></a></button>
+                    src="images/Vector.png" alt="live-link" /></a></button>
                   </div>
               </div>
             </div>
