@@ -158,12 +158,12 @@ if (portfolioItems) {
   });
 }
 
- // Function to check if the email is in lowercase
+ // Function check for lowercase
  function isEmailLowerCase(email) {
   return email === email.toLowerCase();
 }
 
-// Function to handle form submission
+// Function for submission
 function handleSubmit(event) {
   event.preventDefault();
   const emailInput = document.getElementById("email");
@@ -174,12 +174,9 @@ function handleSubmit(event) {
     errorMessage.style.display = "block";
   } else {
     errorMessage.style.display = "none";
-    // You can add code here to submit the form to the server if needed
-    // For this example, let's just log a success message
     console.log("Form submitted successfully!");
   }
 }
 
-// Attach event listener to the form submit event
 const contactForm = document.getElementById("contactForm");
 contactForm.addEventListener("submit", handleSubmit);
