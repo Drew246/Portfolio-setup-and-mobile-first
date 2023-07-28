@@ -142,6 +142,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .skill-lang li {
   display: flex;
   justify-content: start;
@@ -688,6 +689,7 @@ textarea {
     width: 55em;
     height: auto;
   }
+
   .link-button a img {
     margin-left: 5px;
   }
@@ -729,6 +731,13 @@ textarea {
 
   .categories p {
     padding: 10px 0;
+  }
+
+  .stack ul li p {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #172b4d;
+    margin: 15px 0 0 0;
   }
 
   .popup-page .flex-nl p {
@@ -872,13 +881,6 @@ textarea {
     list-style: none;
     padding: 0;
     margin: 15px 0;
-  }
-
-  .stack ul li p {
-    font-size: 0.9em;
-    font-weight: 500;
-    color: #172b4d;
-    margin: 15px 0 0 0;
   }
 
   #contact {
