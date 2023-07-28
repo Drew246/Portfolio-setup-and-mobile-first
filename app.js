@@ -20,6 +20,9 @@ function closeMobileMenu() {
   mobileMenuButton.classList.remove('hidden');
 }
 
+mobileMenuButton.addEventListener('click', toggleMobileMenu);
+closeMenu.addEventListener('click', closeMobileMenu);
+
 const portfolioItemsDetail = [
   {
     id: '0',

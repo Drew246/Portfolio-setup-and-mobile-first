@@ -840,11 +840,6 @@ textarea {
     display: block;
   }
 
-  .flex-nl .lang {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .skill-lang {
     flex-direction: row;
     justify-content: start;
