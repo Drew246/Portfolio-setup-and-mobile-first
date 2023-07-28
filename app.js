@@ -158,8 +158,8 @@ if (portfolioItems) {
   });
 }
 
- // Function check for lowercase
- function isEmailLowerCase(email) {
+// Function check for lowercase
+function isEmailLowerCase(email) {
   return email === email.toLowerCase();
 }
 
@@ -171,12 +171,12 @@ function handleSubmit(event) {
 
   if (!isEmailLowerCase(emailInput.value)) {
     errorMessage.textContent = 'Email must be lowercase only.';
-    errorMessage.style.display = "block";
+    errorMessage.style.display = 'block';
   } else {
-    errorMessage.style.display = "none";
+    errorMessage.style.display = 'none';
     console.log('Form submitted successfully!');
   }
 }
 
 const contactForm = document.getElementById("contactForm");
-contactForm.addEventListener("submit", handleSubmit);
+contactForm.addEventListener('submit', handleSubmit);
