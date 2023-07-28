@@ -374,6 +374,17 @@ button {
   margin: 20px 0;
 }
 
+.skill-lang li {
+  display: flex;
+  justify-content: start;
+  background: #f7f7f9;
+  border-radius: 8px;
+  width: 100%;
+  gap: 10px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
 .myself button {
   width: 140px;
   font-style: normal;
@@ -558,17 +569,6 @@ textarea {
   font-size: 15px;
   color: #253858;
   margin-top: 8px;
-}
-
-.skill-lang li {
-  display: flex;
-  justify-content: start;
-  background: #f7f7f9;
-  border-radius: 8px;
-  width: 100%;
-  gap: 10px;
-  margin: 5px 0;
-  padding: 10px;
 }
 
 .work .lang li {
@@ -816,6 +816,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
   }
+
   .skill-lang {
     flex-direction: row;
     justify-content: start;
