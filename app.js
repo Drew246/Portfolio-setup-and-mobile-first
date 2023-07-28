@@ -178,5 +178,5 @@ function handleSubmit(event) {
   }
 }
 
-const contactForm = document.getElementById("contactForm");
+const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', handleSubmit);
