@@ -166,15 +166,15 @@ if (portfolioItems) {
 // Function for submission
 function handleSubmit(event) {
   event.preventDefault();
-  const emailInput = document.getElementById("email");
-  const errorMessage = document.getElementById("error");
+  const emailInput = document.getElementById('email');
+  const errorMessage = document.getElementById('error');
 
   if (!isEmailLowerCase(emailInput.value)) {
-    errorMessage.textContent = "Email must be in lowercase.";
+    errorMessage.textContent = 'Email must be lowercase only.';
     errorMessage.style.display = "block";
   } else {
     errorMessage.style.display = "none";
-    console.log("Form submitted successfully!");
+    console.log('Form submitted successfully!');
   }
 }
 

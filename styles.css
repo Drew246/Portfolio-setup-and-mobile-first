@@ -479,6 +479,10 @@ label {
   display: block;
 }
 
+#error {
+  display: none;
+}
+
 input,
 textarea {
   width: 320px;
