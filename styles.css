@@ -684,6 +684,10 @@ textarea {
     margin-bottom: 5%;
   }
 
+  .work img {
+    width: 55em;
+    height: auto;
+  }
   .link-button a img {
     margin-left: 5px;
   }
@@ -721,6 +725,10 @@ textarea {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
+  }
+
+  .categories p {
+    padding: 10px 0;
   }
 
   .popup-page .flex-nl p {
@@ -768,6 +776,17 @@ textarea {
 
   .card-left-desk {
     width: 80%;
+  }
+
+  .stack ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #f7f7f9;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
   }
 
   .work .card .cano li {
@@ -825,11 +844,6 @@ textarea {
     margin-top: 20px;
   }
 
-  .work img {
-    width: 55em;
-    height: auto;
-  }
-
   .btn-hover:hover {
     background-color: #6070ff;
     color: #fff;
@@ -849,21 +863,6 @@ textarea {
 
   .myself-title {
     margin: 10px;
-  }
-
-  .categories p {
-    padding: 10px 0;
-  }
-
-  .stack ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    background-color: #f7f7f9;
-    border-radius: 10px;
-    width: 120px;
-    height: 120px;
   }
 
   .stack ul {
