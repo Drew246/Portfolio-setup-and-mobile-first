@@ -743,7 +743,7 @@ textarea {
   }
 
   .link-button a img {
-    margin-left: 5px;
+    /* margin-left: 5px; */
     display: inline;
     margin: 0;
     padding: 0;
@@ -757,6 +757,9 @@ textarea {
     display: flex;
     flex-direction: row;
     gap: 5px;
+  }
+  button .btn-default a img {
+    height: 500px;
   }
 
   .popup-page .snap-image {
@@ -781,10 +784,6 @@ textarea {
     font-size: 20px;
     width: 42%;
     margin: 10px auto;
-  }
-
-  button .btn-default a img {
-    height: 500px;
   }
 
   .popup-page .flex-nl {
