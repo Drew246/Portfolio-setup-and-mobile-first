@@ -23,6 +23,9 @@ body {
   margin-top: 10px;
   color: #396df2;
 }
+button .btn-default a img {
+  height: 500px;
+}
 
 .navbar {
   height: 71px;
@@ -242,24 +245,26 @@ body {
 }
 
 .link-button a {
-  width: 83px;
-  height: 20px;
-  font-family: "Poppins", sans-serif;
+  /* width: 83px;
+  height: 20px;  */
+  /* font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   align-items: center;
-  text-align: center;
+  text-align: center; */
   color: #6070ff;
 }
 
-.link-button img {
-  width: 15px;
+.link-button a img {
+  margin-left: 70px;
 }
 
-.link-button a img {
-  margin-left: 5px;
+.link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #7f8cff;
 }
 
 .link-button {
@@ -776,6 +781,9 @@ textarea {
     font-size: 20px;
     width: 42%;
     margin: 10px auto;
+  }
+  button .btn-default a img {
+    height: 500px;
   }
 
   .popup-page .flex-nl {

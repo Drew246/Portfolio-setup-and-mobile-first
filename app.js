@@ -27,7 +27,7 @@ const portfolioItemsDetail = [
     id: '0',
     name: 'Tonic',
     year: '2015',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has, a galley of type and scrambled it 1960s. Lorem Ipsum is simplydummy text of the printing and typesetting industry.',
+    text: 'Lorem  of type and scrambled it 1960s. Lorem Ipsum is simplydummy text of the printing and typesetting industry.',
     title: 'CANOPY',
     stack: 'Back End Dev',
     workStack: ['HTML', 'CSS', 'JavaScript'],
