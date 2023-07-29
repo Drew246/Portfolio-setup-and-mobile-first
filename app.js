@@ -14,14 +14,12 @@ function toggleMobileMenu() {
   closeMenu.classList.toggle('show');
 }
 
-
 // Close function for mobile-menu
 function closeMobileMenu() {
   mobileMenuList.classList.remove('show');
   mobileMenuButton.classList.remove('hidden');
 }
-
-
+mobileMenuButton.addEventListener('click', toggleMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
 
 const portfolioItemsDetail = [

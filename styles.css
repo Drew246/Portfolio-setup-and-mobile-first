@@ -271,6 +271,7 @@ body {
   border-top: 1px solid #ebecf0;
   padding-top: 10px;
 }
+
 .link-button a:hover {
   background-color: #6070ff;
   color: #fff;
@@ -667,7 +668,7 @@ textarea {
   margin-left: 10px;
 }
 
-work .card h2 {
+.work .card h2 {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
