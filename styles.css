@@ -179,9 +179,8 @@ body {
   padding: 20px;
   width: 80%;
   margin: 0 auto;
-  margin-top: 104px;
+  margin-top: 70px;
   border: 1px solid #e6e8eb;
-  overflow: scroll;
 }
 
 .work img {
@@ -240,6 +239,41 @@ body {
   text-decoration: none;
   display: block;
   color: #6070ff;
+}
+
+.link-button a {
+  width: 83px;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+}
+
+.link-button img {
+  width: 15px;
+}
+
+.link-button a img {
+  margin-left: 5px;
+}
+
+.link-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  order: 1;
+  border-top: 1px solid #ebecf0;
+  padding-top: 10px;
+}
+.link-button a:hover {
+  background-color: #6070ff;
+  color: #fff;
 }
 
 .work .work-btn {
@@ -508,8 +542,7 @@ textarea {
 }
 
 .popup-page .card {
-  position: relative;
-  margin-top: 37%;
+  margin-top: 50%;
   transform: translateY(-20%);
   width: 90%;
 }
@@ -517,7 +550,7 @@ textarea {
 .popup-page .card .close-btn {
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: -5px;
   font-size: 15px;
   color: #7a869a;
   border: none;
@@ -528,10 +561,10 @@ textarea {
   margin-top: 0;
 }
 
-.popup-page .flex-nl {
-  display: flex;
+/* .popup-page .flex-nl {
+  display: none;
   flex-direction: column;
-}
+} */
 
 .flex-nl .lang-nl ul {
   display: flex;
@@ -592,16 +625,26 @@ textarea {
   margin-top: 10px;
 }
 
-.work .card .cano li {
-  margin-right: 10px;
-  font-weight: 600;
-  font-size: 13px;
-  color: #7a869a;
+.work .card p {
+  font-size: 15px;
+  color: #344563;
+}
+
+.work .card-right img {
+  width: 50%;
+  height: 80%;
 }
 
 .work .card-right h2 {
   font-size: 32px;
   line-height: 44px;
+}
+
+.work .card .cano li {
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
 }
 
 .work .card-left-desk {
@@ -622,6 +665,13 @@ textarea {
   color: #7a869a;
   font-size: 10px;
   margin-left: 10px;
+}
+
+work .card h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -686,7 +736,7 @@ textarea {
   }
 
   .work img {
-    width: 55em;
+    width: 50em;
     height: auto;
   }
 
@@ -704,17 +754,22 @@ textarea {
     gap: 5px;
   }
 
-  .popup-page .snap-image,
+  .popup-page .snap-image {
+    display: flex;
+  }
+
   .popup-page .snap-image img {
-    height: auto;
+    margin: auto auto;
+    height: 30em;
     backdrop-filter: blur(5px);
   }
 
   .popup-page .card {
-    width: 80%;
+    width: 60%;
+    height: 850px;
     display: flex;
     margin: 0 auto;
-    margin-top: 10%;
+    padding-top: 135px;
   }
 
   .contact p {
@@ -752,15 +807,17 @@ textarea {
   }
 
   .popup-page {
-    width: 1156px;
-    height: 1163px;
-    top: 77px;
-    left: 142px;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
   }
 
   .work .card {
     flex-direction: row;
     gap: 25px;
+    margin-top: 80px;
   }
 
   .work .card:hover {
