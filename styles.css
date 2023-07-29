@@ -179,7 +179,7 @@ body {
   padding: 20px;
   width: 80%;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 80px;
   border: 1px solid #e6e8eb;
 }
 
@@ -524,10 +524,8 @@ textarea {
 
 .popup-page {
   position: fixed;
-  top: 100px;
+  top: 90px;
   left: 0;
-  height: calc(100% - 15%);
-  overflow: scroll;
   width: 100%;
   z-index: 1;
 }
@@ -543,9 +541,10 @@ textarea {
 }
 
 .popup-page .card {
-  margin-top: 50%;
+  margin-top: 10%;
   transform: translateY(-20%);
   width: 90%;
+  position: relative;
 }
 
 .popup-page .card .close-btn {
