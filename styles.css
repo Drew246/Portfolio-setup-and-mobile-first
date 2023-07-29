@@ -758,6 +758,7 @@ textarea {
     flex-direction: row;
     gap: 5px;
   }
+
   button .btn-default a img {
     height: 500px;
   }
