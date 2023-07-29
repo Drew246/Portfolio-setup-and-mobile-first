@@ -15,7 +15,7 @@ body {
 .btn-default {
   border: 1px solid #6070ff;
   border-radius: 8px;
-  width: 126px;
+  width: 170px;
   height: 48px;
   background: #fff;
   font-weight: 500;
@@ -23,9 +23,9 @@ body {
   margin-top: 10px;
   color: #396df2;
 }
-button .btn-default a img {
+/* button .btn-default a img {
   height: 500px;
-}
+} */
 
 .navbar {
   height: 71px;
@@ -258,7 +258,7 @@ button .btn-default a img {
 }
 
 .link-button a img {
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 .link {
@@ -536,7 +536,7 @@ textarea {
 }
 
 .work .popup-page .card {
-  margin-top: 200px;
+  margin-top: 110px;
 }
 
 .popup-page .background {
@@ -637,6 +637,16 @@ textarea {
 .work .card p {
   font-size: 15px;
   color: #344563;
+}
+
+.work .card-right img {
+  width: 70%;
+  height: 80%;
+}
+
+.work .card-right .btn-default a img {
+  width: 24%;
+  height: 40%;
 }
 
 .work .card-right img {
@@ -751,6 +761,9 @@ textarea {
 
   .link-button a img {
     margin-left: 5px;
+    display: inline;
+    margin: 0;
+    padding: 0;
   }
 
   .link-button i {
