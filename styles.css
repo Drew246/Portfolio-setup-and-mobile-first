@@ -228,7 +228,7 @@ body {
   text-align: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 16px;
   letter-spacing: 0.03em;
   padding: 5px 10px;
@@ -274,7 +274,7 @@ body {
   width: 149px;
   font-style: normal;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -303,7 +303,7 @@ body {
 .myself-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 2.6em;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -323,7 +323,7 @@ body {
 .myself .connect {
   font-style: normal;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 24px;
   color: #7f8cff;
   margin: 25px 0;
@@ -352,7 +352,7 @@ body {
 
 .stack p {
   margin-left: 16px;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .contact {
@@ -407,7 +407,7 @@ button {
   line-height: 24px;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   color: #396df2;
   background-color: white;
   margin: 20px 0;
@@ -417,7 +417,7 @@ button {
   width: 140px;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 0.85em;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
