@@ -517,7 +517,7 @@ textarea {
 
 .popup-page {
   position: fixed;
-  top: 41px;
+  top: 50px;
   left: 0;
   width: 100%;
   z-index: 1;
@@ -531,7 +531,8 @@ textarea {
 }
 
 .work .popup-page .card {
-  margin-top: 110px;
+  margin-top: 105px;
+  margin-bottom: 20px;
 }
 
 .popup-page .background {
@@ -553,15 +554,9 @@ textarea {
   border: none;
   background: transparent;
 }
-
+/* 
 .popup-page .cano {
   margin-top: 0;
-}
-s
-
-/* .popup-page .flex-nl {
-  display: none;
-  flex-direction: column;
 } */
 
 .flex-nl .lang-nl ul {
@@ -626,12 +621,14 @@ s
 .work .card p {
   font-size: 15px;
   color: #344563;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
-.work .card-right img {
+/* .work .card-right img {
   width: 70%;
   height: 80%;
-}
+} */
 
 .work .card-right .btn-default a img {
   width: 24%;
@@ -738,11 +735,6 @@ s
     margin-bottom: 5%;
   }
 
-  .work img {
-    width: 50em;
-    height: auto;
-  }
-
   .link-button a img {
     /* margin-left: 5px; */
     display: inline;
@@ -766,20 +758,19 @@ s
 
   .popup-page .snap-image {
     display: flex;
+    width: 100%;
   }
 
   .popup-page .snap-image img {
-    margin: auto auto;
-    height: 30em;
-    backdrop-filter: blur(5px);
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 100%;
+    height: 40rem;
   }
 
   .popup-page .card {
-    width: 60%;
-    height: 850px;
-    display: flex;
-    margin: 0 auto;
-    padding-top: 135px;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
   .contact p {
@@ -810,16 +801,10 @@ s
     grid-row: 1/3;
   }
 
-  .popup-page .snap-img {
-    width: 1108px;
-    height: 586px;
-    border-radius: 8px;
-  }
-
   .popup-page {
     position: fixed;
-    top: 45px;
-    left: 0;
+    top: 90px;
+    margin-top: 20px;
     height: 100vh;
     width: 100%;
   }
@@ -896,7 +881,7 @@ s
   }
 
   .work .card button {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .work .card-left-mobile {
