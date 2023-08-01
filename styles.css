@@ -517,7 +517,7 @@ textarea {
 
 .popup-page {
   position: fixed;
-  top: 90px;
+  top: 41px;
   left: 0;
   width: 100%;
   z-index: 1;
@@ -557,6 +557,7 @@ textarea {
 .popup-page .cano {
   margin-top: 0;
 }
+s
 
 /* .popup-page .flex-nl {
   display: none;
