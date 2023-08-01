@@ -529,6 +529,7 @@ textarea {
   width: 90%;
   position: relative;
 }
+
 .work .popup-page .card {
   margin-top: 105px;
   margin-bottom: 20px;
@@ -553,10 +554,6 @@ textarea {
   border: none;
   background: transparent;
 }
-/* 
-.popup-page .cano {
-  margin-top: 0;
-} */
 
 .flex-nl .lang-nl ul {
   display: flex;
