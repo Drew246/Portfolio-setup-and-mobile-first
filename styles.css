@@ -54,7 +54,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   opacity: 0.9;
 }
 
@@ -521,19 +521,15 @@ textarea {
   top: 60px;
   left: 0;
   width: 100%;
+  height: ;
 
-  /* z-index: 1; */
 }
 
 .popup-page .card {
-  margin-top: 10%;
+  margin-top: 20%;
   transform: translateY(-20%);
   position: relative;
-}
-
-.work .popup-page .card {
-  margin-top: 105px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   height: 70%;
   z-index: 1;
 }
@@ -545,8 +541,7 @@ textarea {
   top: 0;
   bottom: 0;
   background-color: rgba(211, 211, 212, 0.85);
-  backdrop-filter: blur(3px);
-  opacity: 0.9;
+  
 }
 
 .popup-page .card .close-btn {
@@ -624,11 +619,6 @@ textarea {
   margin-bottom: 20px;
   margin-top: 15px;
 }
-
-/* .work .card-right img {
-  width: 70%;
-  height: 80%;
-} */
 
 .work .card-right .btn-default a img {
   width: 14%;
@@ -768,8 +758,10 @@ textarea {
   }
 
   .popup-page .card {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+ margin-right: auto;
+   margin-left: auto;
   }
 
   .contact p {
@@ -804,13 +796,16 @@ textarea {
     position: fixed;
     top: 90px;
     margin-top: 20px;
-    width: 100%;
+    width: 90%;
+    height: 130%;
   }
 
   .work .card {
     flex-direction: row;
     gap: 25px;
-    margin-top: 80px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
   }
 
   .work .card:hover {
