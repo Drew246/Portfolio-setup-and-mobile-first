@@ -243,10 +243,11 @@ body {
 
 .link-button a {
   color: #6070ff;
+  font-size: 15px;
 }
 
 .link-button a img {
-  margin-left: 80px;
+  display: none;
 }
 
 .link {
@@ -258,11 +259,11 @@ body {
 .link-button {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   gap: 25px;
   order: 1;
   border-top: 1px solid #ebecf0;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .link-button a:hover {
@@ -517,22 +518,26 @@ textarea {
 
 .popup-page {
   position: fixed;
-  top: 50px;
+  top: 60px;
   left: 0;
   width: 100%;
-  z-index: 1;
+
+  /* z-index: 1; */
 }
 
 .popup-page .card {
   margin-top: 10%;
   transform: translateY(-20%);
-  width: 90%;
+
   position: relative;
 }
 
 .work .popup-page .card {
   margin-top: 105px;
   margin-bottom: 20px;
+  /* width: 70%; */
+  height: 70%;
+  z-index: 1;
 }
 
 .popup-page .background {
@@ -542,7 +547,8 @@ textarea {
   top: 0;
   bottom: 0;
   background-color: rgba(211, 211, 212, 0.85);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
+  opacity: 0.9;
 }
 
 .popup-page .card .close-btn {
@@ -627,8 +633,8 @@ textarea {
 } */
 
 .work .card-right .btn-default a img {
-  width: 24%;
-  height: 40%;
+  width: 14%;
+  /* height: 40%; */
 }
 
 .work .card-right h2 {
@@ -667,7 +673,7 @@ textarea {
   font-weight: 700;
   font-size: 40px;
   color: #172b4d;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -748,9 +754,14 @@ textarea {
     gap: 5px;
   }
 
-  button .btn-default a img {
-    height: 500px;
+  .work .card-right .btn-default a img {
+    width: 15%;
+    /* height: 40%; */
   }
+  /* button .btn-default a img {
+    height: 500px;
+    display: none;
+  } */
 
   .popup-page .snap-image {
     display: flex;
@@ -761,7 +772,7 @@ textarea {
     margin-left: 1px;
     margin-right: 1px;
     width: 100%;
-    height: 40rem;
+    height: 30rem;
   }
 
   .popup-page .card {
@@ -801,7 +812,7 @@ textarea {
     position: fixed;
     top: 90px;
     margin-top: 20px;
-    height: 100vh;
+
     width: 100%;
   }
 
