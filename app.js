@@ -171,7 +171,6 @@ function handleSubmit(event) {
     errorMessage.style.display = 'block';
   } else {
     errorMessage.style.display = 'none';
-    console.log('Form submitted successfully!');
   }
 }
 
