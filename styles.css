@@ -751,6 +751,13 @@ textarea {
     gap: 5px;
   }
 
+  .popup-page .snap-image img {
+    margin-left: 1px;
+    margin-right: 1px;
+    width: 100%;
+    height: 30rem;
+  }
+
   .work .card-right .btn-default a img {
     width: 15%;
   }
@@ -804,7 +811,6 @@ textarea {
     position: fixed;
     top: 90px;
     margin-top: 20px;
-
     width: 100%;
   }
 
