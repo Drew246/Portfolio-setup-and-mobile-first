@@ -767,13 +767,6 @@ textarea {
     width: 100%;
   }
 
-  .popup-page .snap-image img {
-    margin-left: 1px;
-    margin-right: 1px;
-    width: 100%;
-    height: 30rem;
-  }
-
   .popup-page .card {
     padding-left: 15%;
     padding-right: 15%;
