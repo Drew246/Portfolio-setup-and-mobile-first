@@ -94,8 +94,8 @@ if (portfolio) {
      <p>${portfolioItemsDetail[i].text}</p>
      <ul class="lang">
        ${portfolioItemsDetail[i].workStack
-        .map((stack) => `<li>${stack}</li>`)
-        .join('')}
+    .map((stack) => `<li>${stack}</li>`)
+    .join('')}
      </ul>
      <button class="btn-default portfolio-items-detail">See project</button>
    </div>
