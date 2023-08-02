@@ -528,14 +528,12 @@ textarea {
 .popup-page .card {
   margin-top: 10%;
   transform: translateY(-20%);
-
   position: relative;
 }
 
 .work .popup-page .card {
   margin-top: 105px;
   margin-bottom: 20px;
-  /* width: 70%; */
   height: 70%;
   z-index: 1;
 }
@@ -634,7 +632,6 @@ textarea {
 
 .work .card-right .btn-default a img {
   width: 14%;
-  /* height: 40%; */
 }
 
 .work .card-right h2 {
@@ -756,12 +753,7 @@ textarea {
 
   .work .card-right .btn-default a img {
     width: 15%;
-    /* height: 40%; */
   }
-  /* button .btn-default a img {
-    height: 500px;
-    display: none;
-  } */
 
   .popup-page .snap-image {
     display: flex;
