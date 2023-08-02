@@ -94,8 +94,8 @@ if (portfolio) {
      <p>${portfolioItemsDetail[i].text}</p>
      <ul class="lang">
        ${portfolioItemsDetail[i].workStack
-    .map((stack) => `<li>${stack}</li>`)
-    .join('')}
+        .map((stack) => `<li>${stack}</li>`)
+        .join('')}
      </ul>
      <button class="btn-default portfolio-items-detail">See project</button>
    </div>
@@ -156,4 +156,24 @@ if (portfolioItems) {
       }
     });
   });
+} function isEmailLowerCase(email) {
+  return email === email.toLowerCase();
 }
+
+// Function for submission
+function handleSubmit(event) {
+  event.preventDefault();
+  const emailInput = document.getElementById('email');
+  const errorMessage = document.getElementById('error');
+
+  if (!isEmailLowerCase(emailInput.value)) {
+    errorMessage.textContent = 'Email must be lowercase only.';
+    errorMessage.style.display = 'block';
+  } else {
+    errorMessage.style.display = 'none';
+    console.log('Form submitted successfully!');
+  }
+}
+
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', handleSubmit);
