@@ -521,7 +521,6 @@ textarea {
   top: 60px;
   left: 0;
   width: 100%;
-  
 }
 
 .popup-page .card {
@@ -540,7 +539,7 @@ textarea {
   top: 0;
   bottom: 0;
   background-color: rgba(211, 211, 212, 0.85);
-  }
+}
 
 .popup-page .card .close-btn {
   position: absolute;
