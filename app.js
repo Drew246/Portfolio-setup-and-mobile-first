@@ -156,4 +156,23 @@ if (portfolioItems) {
       }
     });
   });
+} function isEmailLowerCase(email) {
+  return email === email.toLowerCase();
 }
+
+// Function for submission
+function handleSubmit(event) {
+  event.preventDefault();
+  const emailInput = document.getElementById('email');
+  const errorMessage = document.getElementById('error');
+
+  if (!isEmailLowerCase(emailInput.value)) {
+    errorMessage.textContent = 'Email must be lowercase only.';
+    errorMessage.style.display = 'block';
+  } else {
+    errorMessage.style.display = 'none';
+  }
+}
+
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', handleSubmit);
