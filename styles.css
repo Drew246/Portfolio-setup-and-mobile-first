@@ -9,11 +9,19 @@
 
 body {
   background-color: #e5e5e5;
+  line-height: 1.6;
 }
 
-.desktop-menu,
-.desktop {
-  display: none;
+.btn-default {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  width: 170px;
+  height: 48px;
+  background: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 10px;
+  color: #396df2;
 }
 
 .navbar {
@@ -46,7 +54,7 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
   opacity: 0.9;
 }
 
@@ -105,17 +113,16 @@ body {
   width: 230px;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 55px;
   line-height: 52px;
   display: flex;
   align-items: center;
   color: #172b4d;
 }
 
-.headline .content {
-  font-style: normal;
+.headline p {
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 16px;
   line-height: 24px;
   color: #344563;
   margin: 15px 0;
@@ -130,30 +137,21 @@ body {
   margin: 15px 0;
 }
 
-.categories ul li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 30px;
-  font-size: 1.3em;
-  margin: 0;
-}
-
-.stack ul li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #f7f7f9;
-  padding: 5px;
-  border-radius: 10px;
-  margin: 10px 0;
-}
-
 .headline .social-media {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.skill-lang li {
+  display: flex;
+  justify-content: start;
+  background: #f7f7f9;
+  border-radius: 8px;
+  width: 100%;
+  gap: 10px;
+  margin: 5px 0;
+  padding: 10px;
 }
 
 .headline .social-media li {
@@ -169,31 +167,24 @@ body {
 
 .work {
   display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+}
+
+.work .card {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-radius: 16px;
-  border: 1px solid #dfe1e6;
-  padding: 15px;
-  margin: 50px 20px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+  border: 1px solid #e6e8eb;
 }
 
 .work img {
   width: 100%;
-  height: auto;
-}
-
-.card-contents {
-  display: flex;
-  flex-direction: column;
-}
-
-.work .card-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.1em;
-  line-height: 44px;
-  width: 65%;
-  color: #172b4d;
-  margin: 3px 0;
 }
 
 .counter span:first-of-type {
@@ -224,15 +215,6 @@ body {
   margin: 0 8px;
 }
 
-.work .card-desc {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 24px;
-  margin: 5px 0;
-  color: #344563;
-}
-
 .techs {
   list-style: none;
   padding: 0;
@@ -246,7 +228,7 @@ body {
   text-align: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 16px;
   letter-spacing: 0.03em;
   padding: 5px 10px;
@@ -259,11 +241,41 @@ body {
   color: #6070ff;
 }
 
+.link-button a {
+  color: #6070ff;
+  font-size: 15px;
+}
+
+.link-button a img {
+  display: none;
+}
+
+.link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #7f8cff;
+}
+
+.link-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 25px;
+  order: 1;
+  border-top: 1px solid #ebecf0;
+  padding-top: 5px;
+}
+
+.link-button a:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
 .work .work-btn {
   width: 149px;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -292,7 +304,7 @@ body {
 .myself-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 2.6em;
+  font-size: 2.5em;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -312,7 +324,7 @@ body {
 .myself .connect {
   font-style: normal;
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 24px;
   color: #7f8cff;
   margin: 25px 0;
@@ -341,7 +353,7 @@ body {
 
 .stack p {
   margin-left: 16px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .contact {
@@ -396,7 +408,7 @@ button {
   line-height: 24px;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   color: #396df2;
   background-color: white;
   margin: 20px 0;
@@ -406,7 +418,7 @@ button {
   width: 140px;
   font-style: normal;
   font-weight: 600;
-  font-size: 0.85em;
+  font-size: 0.8em;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
@@ -504,6 +516,150 @@ textarea {
   margin: 14% auto 2%;
 }
 
+.popup-page {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+}
+
+.popup-page .card {
+  margin-top: 20%;
+  transform: translateY(-20%);
+  position: relative;
+  margin-bottom: 40px;
+  height: 70%;
+  z-index: 1;
+}
+
+.popup-page .background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(211, 211, 212, 0.85);
+}
+
+.popup-page .card .close-btn {
+  position: absolute;
+  right: 20px;
+  top: -5px;
+  font-size: 15px;
+  color: #7a869a;
+  border: none;
+  background: transparent;
+}
+
+.flex-nl .lang-nl ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  width: 214px;
+  height: 24px;
+  flex-wrap: wrap;
+}
+
+.flex-nl .lang-nl {
+  padding: 5px 10px;
+  margin-right: 10px;
+  background: #ebebff;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 8px;
+}
+
+.work .lang a {
+  padding: 5px 10px;
+  margin-right: 10px;
+  background: #ebebff;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 8px;
+}
+
+.skill-lang li h2 {
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
+  margin-top: 8px;
+}
+
+.work .lang li {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  background: #ebebff;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070ff;
+  border-radius: 8px;
+}
+
+.work .lang {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work .card .cano {
+  display: flex;
+  margin-top: 10px;
+}
+
+.work .card p {
+  font-size: 15px;
+  color: #344563;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.work .card-right .btn-default a img {
+  width: 14%;
+}
+
+.work .card-right h2 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.work .card .cano li {
+  margin-right: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.work .card-left-desk {
+  display: none;
+}
+
+.work .card .cano li i {
+  color: #7a869a;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.work .card .cano li:first-child {
+  color: #344563;
+}
+
+.work .card .cano li:first-child i {
+  color: #7a869a;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.work .card h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+  margin-top: 15px;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar {
     padding: 25px 110px;
@@ -565,43 +721,172 @@ textarea {
     margin-bottom: 5%;
   }
 
-  .work {
+  .link-button a img {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  .link-button i {
+    width: 20px;
+  }
+
+  .link-button {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    background-color: #fff;
-    border-radius: 16px;
-    border: 1px solid #dfe1e6;
-    padding: 15px;
-    margin: 7em;
+    gap: 5px;
   }
 
-  .work:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .work img {
+  .popup-page .snap-image img {
+    margin-left: 1px;
+    margin-right: 1px;
     width: 100%;
-    height: auto;
+    height: 30rem;
   }
 
-  .img-card,
-  .card-contents,
-  .category,
-  .myself {
-    width: 50%;
+  .work .card-right .btn-default a img {
+    width: 15%;
   }
 
-  .card-contents {
-    padding: 30px;
+  .popup-page .snap-image {
+    display: flex;
+    width: 100%;
   }
 
-  .card-title,
-  .counter,
-  .card-desc,
-  .techs,
-  .work-btn {
-    margin: 35px 0;
+  .popup-page .card {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contact p {
+    font-size: 20px;
+    width: 42%;
+    margin: 10px auto;
+  }
+
+  .popup-page .flex-nl {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .categories p {
+    padding: 10px 0;
+  }
+
+  .stack ul li p {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #172b4d;
+    margin: 15px 0 0 0;
+  }
+
+  .popup-page .flex-nl p {
+    grid-column: 1/1;
+    grid-row: 1/3;
+  }
+
+  .popup-page {
+    position: fixed;
+    top: 90px;
+    margin-top: 20px;
+    width: 90%;
+    height: 130%;
+  }
+
+  .work .card {
+    flex-direction: row;
+    gap: 25px;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work .card:hover {
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.103);
+    border: #a7aeff solid 1px;
+  }
+
+  .work .card .cano {
+    margin-top: 10px;
+  }
+
+  .card-left {
+    width: 80%;
+    transition: transform 0.2s;
+  }
+
+  .card-left:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
+  }
+
+  .card-left-desk {
+    width: 80%;
+  }
+
+  .skill-lang li {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: #f7f7f9;
+    border-radius: 8px;
+    width: 122px;
+    margin: 5px 0;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .stack ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #f7f7f9;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .work .card .cano li {
+    font-size: 18px;
+  }
+
+  .work .card p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .flex-nl .lang {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .work .card .lang {
+    margin-top: 10px;
+  }
+
+  .work .card button {
+    margin-top: 30px;
+  }
+
+  .work .card-left-mobile {
+    display: none;
+  }
+
+  .work .card-left-desk {
+    display: block;
+  }
+
+  .skill-lang {
+    flex-direction: row;
+    justify-content: start;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
   }
 
   .btn-hover:hover {
@@ -625,21 +910,6 @@ textarea {
     margin: 10px;
   }
 
-  .categories p {
-    padding: 10px 0;
-  }
-
-  .stack ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    background-color: #f7f7f9;
-    border-radius: 10px;
-    width: 120px;
-    height: 120px;
-  }
-
   .stack ul {
     display: flex;
     flex-direction: row;
@@ -647,13 +917,6 @@ textarea {
     list-style: none;
     padding: 0;
     margin: 15px 0;
-  }
-
-  .stack ul li p {
-    font-size: 0.9em;
-    font-weight: 500;
-    color: #172b4d;
-    margin: 15px 0 0 0;
   }
 
   #contact {

@@ -11,6 +11,12 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css"
     />
   </head>
@@ -29,28 +35,22 @@
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
-        <a href="#" class="mobile-menu" onclick="toggleMobileMenu()">
+        <a href="#" class="mobile-menu">
           <i class="fa fa-bars"></i>
         </a>
         <ul class="mobile-menu-list" id="mobileMenuList">
           <li class="nav-item">
-            <a href="#portfolio" class="nav-link" onclick="closeMobileMenu()"
-              >Portfolio</a
-            >
+            <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link" onclick="closeMobileMenu()"
-              >About</a
-            >
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link" onclick="closeMobileMenu()"
-              >Contact</a
-            >
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
 
-        <a href="#" class="close-menu" onclick="toggleMobileMenu()">
+        <a href="#" class="close-menu">
           <i class="fa fa-times"></i>
         </a>
       </nav>
@@ -86,395 +86,138 @@
       </ul>
     </section>
 
-    <main>
-      <section id="portfolio">
-        <div class="work">
-          <div class="img-card">
-            <img src="images/Snapshoot Portfolio1.png" class="mobile" alt="" />
-            <img src="images/natureDesktop.png" class="desktop" alt="" />
-          </div>
-          <div class="card-contents">
-            <h2 class="card-title">Tonic</h2>
-            <div class="counter">
-              <span>CANOPY</span>
-              <span class="counters"></span>
-              <span>Back End Dev</span>
-              <span class="counters"></span>
-              <span>2015</span>
-            </div>
-            <p class="card-desc">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+    <!--- Start of cards container -->
+    <section class="work" id="portfolio">
+      <div class="container wrapper"></div>
+    </section>
+    <!-- End of cards container -->
+
+    <section id="about">
+      <div class="about-myself">
+        <div class="my-resume">
+          <div class="myself">
+            <h2 class="myself-title">About Myself</h2>
+            <p class="contents">
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience! If
+              you like what you see and have a project you need coded, don’t
+              hestiate to contact me.
             </p>
-            <ul class="techs">
-              <li class="techs-item">
-                <a href="#" class="techs-link">html</a>
+            <p class="connect">LET'S CONNECT</p>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fa fa-github"></i></a>
               </li>
-              <li class="techs-item"><a href="#" class="techs-link">css</a></li>
-              <li class="techs-item">
-                <a href="#" class="techs-link">javaScript</a>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-angellist"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-medium"></i></a>
               </li>
             </ul>
-            <button type="button" class="work-btn">See Project</button>
-          </div>
-        </div>
-      </section>
-      <!-- mobile -->
-      <section class="work-section mobile">
-        <div class="work">
-          <div class="img-card">
-            <img src="images/Snapshoot Portfolio2.png" class="mobile" alt="" />
-          </div>
-          <div class="card-contents">
-            <div class="mobile">
-              <h2 class="card-title">Multi-Post Stories</h2>
-              <div class="counter">
-                <span>CANOPY</span>
-                <span class="counters"></span>
-                <span>Back End Dev</span>
-                <span class="counters"></span>
-                <span>2015</span>
-              </div>
-              <p class="card-desc">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="techs">
-                <li class="techs-item">
-                  <a href="#" class="techs-link">html</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">css</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">javaScript</a>
-                </li>
-              </ul>
-              <button type="button" class="work-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- desktop -->
-      <section class="work-section desktop">
-        <div class="work">
-          <div class="card-contents">
-            <div class="desktop">
-              <h2 class="card-title">Multi-Post Stories</h2>
-              <div class="counter">
-                <span>FACEBOOK</span>
-                <span class="counters"></span>
-                <span>Full Stack Dev</span>
-                <span class="counters"></span>
-                <span>2015</span>
-              </div>
-              <p class="card-desc">
-                Experimental content creation feature that allows users to add
-                to an existing stories over the course of a day without spamming
-                their friends.
-              </p>
-              <ul class="techs">
-                <li class="techs-item">
-                  <a href="#" class="techs-link">html</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">ruby on rails</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">css</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">javaScript</a>
-                </li>
-              </ul>
-              <button type="button" class="work-btn">See Project</button>
-            </div>
-          </div>
-          <div class="img-card">
-            <img src="images/storiesDesktop.png" class="desktop" alt="" />
-          </div>
-        </div>
-      </section>
-      <!-- mobile -->
-      <section class="work-section mobile">
-        <div class="work">
-          <div class="img-card">
-            <img src="images/Snapshoot Portfolio3.png" class="mobile" alt="" />
-          </div>
-          <div class="card-contents">
-            <div class="mobile">
-              <h2 class="card-title">Tonic</h2>
-              <div class="counter">
-                <span>CANOPY</span>
-                <span class="counters"></span>
-                <span>Back End Dev</span>
-                <span class="counters"></span>
-                <span>2015</span>
-              </div>
-              <p class="card-desc">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="techs">
-                <li class="techs-item">
-                  <a href="#" class="techs-link">html</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">css</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">javaScript</a>
-                </li>
-              </ul>
-              <button type="button" class="work-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- desktop -->
-      <section class="work-section desktop">
-        <div class="work">
-          <div class="img-card">
-            <img src="images/Facebook360Desktop.png" class="desktop" alt="" />
-          </div>
-          <div class="card-contents">
-            <div class="desktop">
-              <h2 class="card-title">Facebook 360</h2>
-              <div class="counter">
-                <span>FACEBOOK</span>
-                <span class="counters"></span>
-                <span>Full Stack Dev</span>
-                <span class="counters"></span>
-                <span>2015</span>
-              </div>
-              <p class="card-desc">
-                Exploring the future of media in Facebook's first Virtual
-                Reality app, a place to discover and enjoy 360 photos and videos
-                on Gear VR.
-              </p>
-              <ul class="techs">
-                <li class="techs-item">
-                  <a href="#" class="techs-link">html</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">ruby on rails</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">css</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">javaScript</a>
-                </li>
-              </ul>
-              <button type="button" class="work-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- mobile -->
-      <section class="work-section mobile">
-        <div class="work">
-          <div class="img-card">
-            <img src="images/storiesMobile.png" class="mobile" alt="" />
-          </div>
-          <div class="card-contents">
-            <div class="mobile">
-              <h2 class="card-title">Multi-Post Stories</h2>
-              <div class="counter">
-                <span>CANOPY</span>
-                <span class="counters"></span>
-                <span>Back End Dev</span>
-                <span class="counters"></span>
-                <span>2015</span>
-              </div>
-              <p class="card-desc">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
-              </p>
-              <ul class="techs">
-                <li class="techs-item">
-                  <a href="#" class="techs-link">html</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">css</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">javaScript</a>
-                </li>
-              </ul>
-              <button type="button" class="work-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- desktop -->
-      <section class="work-section desktop">
-        <div class="work">
-          <div class="card-contents">
-            <div class="desktop">
-              <h2 class="card-title">Uber Navigation</h2>
-              <div class="counter">
-                <span>Uber</span>
-                <span class="counters"></span>
-                <span>Lead Developer</span>
-                <span class="counters"></span>
-                <span>2018</span>
-              </div>
-              <p class="card-desc">
-                A smart assistant to make driving more safe, efficient, and fun
-                by unlocking your most expensive computer your car
-              </p>
-              <ul class="techs">
-                <li class="techs-item">
-                  <a href="#" class="techs-link">html</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">ruby on rails</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">css</a>
-                </li>
-                <li class="techs-item">
-                  <a href="#" class="techs-link">javaScript</a>
-                </li>
-              </ul>
-              <button type="button" class="work-btn">See Project</button>
-            </div>
-          </div>
-          <div class="img-card">
-            <img src="images/UberDesktop.png" class="desktop" alt="" />
-          </div>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="about-myself">
-          <div class="my-resume">
-            <div class="myself">
-              <h2 class="myself-title">About Myself</h2>
-              <p class="contents">
-                Hello I’m a software developer! I can help you build a product ,
-                feature or website Look through some of my work and experience!
-                If you like what you see and have a project you need coded,
-                don’t hestiate to contact me.
-              </p>
-              <p class="connect">LET'S CONNECT</p>
-              <ul class="social-media">
-                <li>
-                  <a href="#"><i class="fa fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-angellist"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fa fa-medium"></i></a>
-                </li>
-              </ul>
-              <button type="button" class="work-btn">Get my resume</button>
-            </div>
-
-            <div class="category">
-              <div class="categories">
-                <ul>
-                  <li>
-                    <p>Languages</p>
-                    <i class="fa fa-angle-down"></i>
-                  </li>
-                </ul>
-              </div>
-              <div class="stack">
-                <ul>
-                  <li>
-                    <img src="images/js.png" alt="" />
-                    <p>JavaScript</p>
-                  </li>
-                  <li>
-                    <img src="images/html.png" alt="" />
-                    <p>HTML</p>
-                  </li>
-                  <li>
-                    <img src="images/css.png" alt="" />
-                    <p>CSS</p>
-                  </li>
-                </ul>
-              </div>
-              <div class="categories">
-                <ul>
-                  <li>
-                    <p>Frameworks</p>
-                    <i class="fa fa-angle-right"></i>
-                  </li>
-                </ul>
-                <hr />
-                <ul>
-                  <li>
-                    <p>Skills</p>
-                    <i class="fa fa-angle-right"></i>
-                  </li>
-                </ul>
-                <hr />
-              </div>
-            </div>
+            <button type="button" class="work-btn">Get my resume</button>
           </div>
 
-          <section id="contact">
-            <div class="contact">
-              <h4 class="contact-me">Contact me</h4>
-              <p class="contact-info">
-                If you have an application you are interested in developing, a
-                feature that you need built or a project that needs coding. I’d
-                love to help with it
-              </p>
-              <form
-                class="form"
-                id="form"
-                action="https://formspree.io/f/mdovbonp"
-                method="post"
-              >
-                <label for="fullname">
-                  <input
-                    name="fullname"
-                    type="text"
-                    id="fullname"
-                    placeholder="Your Full Name"
-                    maxlength="30"
-                    required
-                  />
-                </label>
-                <label for="email">
-                  <input
-                    name="Email"
-                    id="email"
-                    type="email"
-                    placeholder="Your Email"
-                    required
-                  />
-                </label>
-                <label for="message">
-                  <textarea
-                    name="message"
-                    id="message"
-                    cols="30"
-                    rows="10"
-                    placeholder="Write your message here"
-                    maxlength="500"
-                    required
-                  ></textarea>
-                </label>
-                <button type="submit" class="work-btn">Get in touch</button>
-              </form>
-              <div class="shape"></div>
+          <div class="category">
+            <div class="categories">
+              <ul>
+                <li>
+                  <p>Languages</p>
+                  <i class="fa fa-angle-down"></i>
+                </li>
+              </ul>
             </div>
-          </section>
+            <div class="stack">
+              <ul>
+                <li>
+                  <img src="images/js.png" alt="" />
+                  <p>JavaScript</p>
+                </li>
+                <li>
+                  <img src="images/html.png" alt="" />
+                  <p>HTML</p>
+                </li>
+                <li>
+                  <img src="images/css.png" alt="" />
+                  <p>CSS</p>
+                </li>
+              </ul>
+            </div>
+            <div class="categories">
+              <ul>
+                <li>
+                  <p>Frameworks</p>
+                  <i class="fa fa-angle-right"></i>
+                </li>
+              </ul>
+              <hr />
+              <ul>
+                <li>
+                  <p>Skills</p>
+                  <i class="fa fa-angle-right"></i>
+                </li>
+              </ul>
+              <hr />
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
+        <section id="contact">
+          <div class="contact">
+            <h4 class="contact-me">Contact me</h4>
+            <p class="contact-info">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it!
+            </p>
+            <form
+              class="form"
+              id="form"
+              action="https://formspree.io/f/mdovbonp"
+              method="post"
+            >
+              <label for="fullname">
+                <input
+                  name="fullname"
+                  type="text"
+                  id="fullname"
+                  placeholder="Your Full Name"
+                  maxlength="30"
+                  required
+                />
+              </label>
+              <label for="email">
+                <input
+                  name="Email"
+                  id="email"
+                  type="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </label>
+              <label for="message">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write your message here"
+                  maxlength="500"
+                  required
+                ></textarea>
+              </label>
+              <button type="submit" class="work-btn">Get in touch</button>
+            </form>
+            <div class="shape"></div>
+          </div>
+        </section>
+      </div>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>

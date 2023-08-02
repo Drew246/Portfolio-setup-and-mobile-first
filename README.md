@@ -32,6 +32,7 @@ by following the suggested list of best practices for HTML & CSS. We are also to
   <ul>
     <li><a href="https://html.spec.whatwg.org/">HTML</a></li>
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
+    <li> Javascript</li>
   </ul>
 
 ### Key Features <a name="key-features"></a>
