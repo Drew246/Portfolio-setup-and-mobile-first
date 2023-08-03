@@ -1,11 +1,9 @@
-// DECLARE VARIABLES
 const mobileMenuList = document.getElementById('mobileMenuList');
 const mobileMenuButton = document.querySelector('.mobile-menu');
 const closeMenu = document.querySelector('.close-menu');
 const portfolio = document.getElementById('portfolio');
 const wrapper = document.querySelector('.wrapper');
 
-// CREATE FUNCTIONS (toggle-menu)
 function toggleMobileMenu() {
   mobileMenuList.classList.toggle('show');
   mobileMenuList.style.color = 'white';
@@ -156,19 +154,21 @@ if (portfolioItems) {
       }
     });
   });
-} function isEmailLowerCase(email) {
+}
+
+function isEmailLowerCase(email) {
   return email === email.toLowerCase();
 }
 
 // Function for submission
 function handleSubmit(event) {
-  event.preventDefault();
   const emailInput = document.getElementById('email');
   const errorMessage = document.getElementById('error');
 
   if (!isEmailLowerCase(emailInput.value)) {
     errorMessage.textContent = 'Email must be lowercase only.';
     errorMessage.style.display = 'block';
+    event.preventDefault();
   } else {
     errorMessage.style.display = 'none';
   }
@@ -176,3 +176,31 @@ function handleSubmit(event) {
 
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', handleSubmit);
+
+// Save data in local-storage
+const form = document.querySelector('form');
+const fullname = document.querySelector('#fullname');
+const Email = document.querySelector('#email');
+const message = document.querySelector('#message');
+
+if (form && fullname && Email && message) {
+  form.addEventListener('input', () => {
+    const formData = {
+      name: fullname.value,
+      email: Email.value,
+      message: message.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+}
+
+// Receive data from local-storage
+window.onload = () => {
+  const formData = localStorage.getItem('formData');
+  if (formData) { // Check if the data exists
+    const formDataObject = JSON.parse(formData);
+    if (fullname) fullname.value = formDataObject.name || '';
+    if (Email) Email.value = formDataObject.email || '';
+    if (message) message.value = formDataObject.message || '';
+  }
+};
