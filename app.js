@@ -1,11 +1,9 @@
-// DECLARE VARIABLES
 const mobileMenuList = document.getElementById('mobileMenuList');
 const mobileMenuButton = document.querySelector('.mobile-menu');
 const closeMenu = document.querySelector('.close-menu');
 const portfolio = document.getElementById('portfolio');
 const wrapper = document.querySelector('.wrapper');
 
-// CREATE FUNCTIONS (toggle-menu)
 function toggleMobileMenu() {
   mobileMenuList.classList.toggle('show');
   mobileMenuList.style.color = 'white';
