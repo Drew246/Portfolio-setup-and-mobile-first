@@ -92,8 +92,8 @@ if (portfolio) {
      <p>${portfolioItemsDetail[i].text}</p>
      <ul class="lang">
        ${portfolioItemsDetail[i].workStack
-    .map((stack) => `<li>${stack}</li>`)
-    .join('')}
+        .map((stack) => `<li>${stack}</li>`)
+        .join('')}
      </ul>
      <button class="btn-default portfolio-items-detail">See project</button>
    </div>
@@ -154,7 +154,9 @@ if (portfolioItems) {
       }
     });
   });
-} function isEmailLowerCase(email) {
+}
+
+function isEmailLowerCase(email) {
   return email === email.toLowerCase();
 }
 
@@ -177,12 +179,12 @@ contactForm.addEventListener('submit', handleSubmit);
 
 // Save data in local-storage
 const form = document.querySelector('form');
-const fullname = document.querySelector('#name');
+const fullname = document.querySelector('#fullname');
 const Email = document.querySelector('#email');
 const message = document.querySelector('#message');
 
 if (form && fullname && Email && message) {
-  form.addEventListener('keyup', () => {
+  form.addEventListener('input', () => {
     const formData = {
       name: fullname.value,
       email: Email.value,
