@@ -176,3 +176,31 @@ function handleSubmit(event) {
 
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', handleSubmit);
+
+// Save data in local-storage
+const form = document.querySelector('form');
+const fullname = document.querySelector('#name');
+const Email = document.querySelector('#email');
+const message = document.querySelector('#message');
+
+if (form && fullname && Email && message) {
+  form.addEventListener('keyup', () => {
+    const formData = {
+      name: fullname.value,
+      email: Email.value,
+      message: message.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+}
+
+// Receive data from local-storage
+window.onload = () => {
+  const formData = localStorage.getItem('formData');
+  if (formData) { // Check if the data exists
+    const formDataObject = JSON.parse(formData);
+    if (fullname) fullname.value = formDataObject.name || '';
+    if (Email) Email.value = formDataObject.email || '';
+    if (message) message.value = formDataObject.message || '';
+  }
+};
